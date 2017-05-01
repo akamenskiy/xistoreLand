@@ -163,6 +163,13 @@ a {
     width: 14%;
 }
 
+.about_icon{
+    float: left;
+}
+.about_icon img{
+    width: 100%;
+}
+
 .about_desc {
     color: #423d45;
     font-size: 12px;
