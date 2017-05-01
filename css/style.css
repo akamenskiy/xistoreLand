@@ -1,0 +1,187 @@
+/*****************************CSS Reset******************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote {
+    quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*********************************Fonts********************************************/
+
+@font-face {
+    font-family: flaticon;
+    src: url(../fonts/flaticon.eot);
+    src: url(../fonts/flaticon.svg);
+    src: url(../fonts/flaticon.ttf);
+    src: url(../fonts/flaticon.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*************************Main CSS***********************************/
+
+/***************    General CSS    ***************/
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.cntBlock {
+    min-width: 1024px;
+    width: 100%;
+}
+
+.container {
+    width: 1131px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/***************        fonts       ****************/
+.font_1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/****************       nav         *****************/
+
+.cntBlock_nav {
+    background-color: #333333;
+}
+
+.nav_list {
+    list-style: none;
+}
+
+.nav_item {
+    float: left;
+}
+
+.nav_link {
+    color: #c6cacc;
+    padding: 20px 10px;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/****************       about       ****************/
+
+.cntBlock_about {
+    background-color: #ffffff;
+}
+
+.about_list {
+    list-style: none;
+    width: 100%;
+    display: table;
+    padding: 8px 0;
+}
+
+.about_item {
+    padding: 10px;
+    width: 20%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.about_item__contacts{
+    padding-top: 0;
+    width: 22%;
+}
+
+.about_item__desc {
+    border-left: 1px solid #9a9a9a;
+    width: 14%;
+}
+
+.about_icon{
+    float: left;
+}
+.about_icon img{
+    width: 100%;
+}
+
+.about_desc {
+    color: #423d45;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.about_desc span{
+    display: block;
+}
+
+.about_title {
+    color: #565656;
+    font-size: 24px;
+    line-height: 25px;
+}
