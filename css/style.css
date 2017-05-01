@@ -98,10 +98,7 @@ html {
 }
 
 .container {
-    width: 1024px;
-    /*min-width: 1024px;
-    max-width: 1400px;
-    width: 90%;*/
+    width: 1131px;
     margin: 0 auto;
 }
 
@@ -130,7 +127,7 @@ a {
 
 .nav_link {
     color: #c6cacc;
-    padding: 10px;
+    padding: 20px 10px;
     display: block;
     font-size: 12px;
     font-weight: 400;
@@ -151,26 +148,34 @@ a {
 
 .about_item {
     padding: 10px;
-    width: 21.5%;
-    margin:0 auto;
+    width: 20%;
     display: table-cell;
     vertical-align: middle;
 }
 
-.about_item__desc{
+.about_item__contacts{
+    padding-top: 0;
+    width: 22%;
+}
+
+.about_item__desc {
     border-left: 1px solid #9a9a9a;
-   /* padding: 10px 50px 10px 5px;*/
     width: 14%;
 }
 
-.about_desc{
+.about_desc {
     color: #423d45;
     font-size: 12px;
     line-height: 16px;
 }
 
-.about_title{
+.about_desc span{
+    display: block;
+}
+
+.about_title {
     color: #565656;
     font-size: 24px;
+    line-height: 25px;
 }
 
