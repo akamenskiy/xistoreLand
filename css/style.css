@@ -84,10 +84,10 @@ html {
 }
 
 .container {
-    width: 1130px;
+    width: 1280px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 a {
@@ -210,9 +210,7 @@ a {
 }
 
 .hero {
-    width: 1060px;
-    padding-top: 82px;
-    padding-bottom: 72px;
+    padding: 82px 86px 72px;
     position: relative;
 }
 
@@ -251,10 +249,10 @@ a {
 
 .hero_bg {
     top: 1px;
-    right: 60px;
+    right: 200px;
 }
 
 .hero_img {
     bottom: -20px;
-    right: 120px;
+    right: 250px;
 }
