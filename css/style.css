@@ -86,11 +86,14 @@ html {
 .container {
     width: 1130px;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 a {
     text-decoration: none;
 }
+
 
 /***************        fonts       ****************/
 .font_1 {
@@ -197,4 +200,61 @@ a {
     color: #565656;
     font-size: 24px;
     line-height: 25px;
+}
+
+/**************   hero    ****************/
+
+.cntBlock_hero {
+    background-color: #242b30;
+    min-width: 1060px;
+}
+
+.hero {
+    width: 1060px;
+    padding-top: 82px;
+    padding-bottom: 72px;
+    position: relative;
+}
+
+.hero_title {
+    position: relative;
+    font-size: 48px;
+    color: #e1e6ea;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.features {
+    position: relative;
+}
+
+.icon-clock2, .icon-cool, .icon-shield {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-clock2 {
+    color: #ff9f00;
+}
+
+.features_item span {
+    font-size: 24px;
+    color: #fefefe;
+    position: relative;
+    top: -10px;
+    margin-left: 5px;
+}
+
+.hero_bg, .hero_img {
+    position: absolute;
+}
+
+.hero_bg {
+    top: 1px;
+    right: 60px;
+}
+
+.hero_img {
+    bottom: -20px;
+    right: 120px;
 }
