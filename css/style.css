@@ -214,25 +214,20 @@ a {
     position: relative;
 }
 
-.hero_title {
+.hero_content {
     position: relative;
+}
+
+.hero_title {
     font-size: 48px;
     color: #e1e6ea;
     font-weight: 300;
     margin-bottom: 20px;
 }
 
-.features {
-    position: relative;
-}
-
-.icon-clock2, .icon-cool, .icon-shield {
+.hero .icon {
     width: 40px;
     height: 40px;
-}
-
-.icon-clock2 {
-    color: #ff9f00;
 }
 
 .features_item span {
