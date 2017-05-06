@@ -40,25 +40,12 @@ caption, th, td {
     vertical-align: middle;
 }
 
-q, blockquote {
-    quotes: none;
-}
-
-q:before, q:after, blockquote:before, blockquote:after {
-    content: "";
-    content: none;
-}
-
 a img {
     border: none;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display: block;
-}
-
-img {
-    max-width: 100%;
 }
 
 html {
@@ -88,23 +75,25 @@ html {
 
 .clearfix::after {
     content: '';
-    display: table;
+    display: block;
     clear: both;
 }
 
 .cntBlock {
-    min-width: 1024px;
     width: 100%;
 }
 
 .container {
-    width: 1131px;
+    width: 1280px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 a {
     text-decoration: none;
 }
+
 
 /***************        fonts       ****************/
 .font_1 {
@@ -117,20 +106,25 @@ a {
     background-color: #333333;
 }
 
-.nav_list {
-    list-style: none;
-}
-
 .nav_item {
     float: left;
+    padding: 20px 10px;
 }
 
 .nav_link {
     color: #c6cacc;
-    padding: 20px 10px;
+
     display: block;
     font-size: 12px;
     font-weight: 400;
+}
+
+.nav_item:first-child{
+    padding-left: 0;
+}
+
+.nav_item:last-child{
+    padding-right: 0;
 }
 
 /****************       about       ****************/
@@ -140,7 +134,6 @@ a {
 }
 
 .about_list {
-    list-style: none;
     width: 100%;
     display: table;
     padding: 8px 0;
@@ -153,9 +146,19 @@ a {
     vertical-align: middle;
 }
 
-.about_item__contacts{
+.about_item:first-child{
+    padding-left: 0;
+}
+.about_item:last-child{
+    padding-right: 0;
+}
+
+.about_item__time, .about_item__address, .about_item__phone{
     padding-top: 0;
-    width: 22%;
+}
+
+.about_item__phone{
+    width: 26%;
 }
 
 .about_item__desc {
@@ -164,10 +167,23 @@ a {
 }
 
 .about_icon{
-    float: left;
+    display: inline-block;
+    vertical-align: top;
 }
-.about_icon img{
-    width: 100%;
+
+.icon-logo{
+    width: 190px;
+    height: 86px;
+}
+
+.icon-clock, .icon-geo_linear, .icon-phone{
+    width: 30px;
+    height: 30px;
+}
+
+
+.about_content {
+    display: inline-block;
 }
 
 .about_desc {
@@ -176,12 +192,62 @@ a {
     line-height: 16px;
 }
 
-.about_desc span{
-    display: block;
+.about_title{
+    margin-bottom: 5px;
 }
 
-.about_title {
+.about_title, .about_title a {
     color: #565656;
     font-size: 24px;
     line-height: 25px;
+}
+
+/**************   hero    ****************/
+
+.cntBlock_hero {
+    background-color: #242b30;
+    min-width: 1060px;
+}
+
+.hero {
+    padding: 82px 86px 72px;
+    position: relative;
+}
+
+.hero_content {
+    position: relative;
+}
+
+.hero_title {
+    font-size: 48px;
+    color: #e1e6ea;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.hero .icon {
+    width: 40px;
+    height: 40px;
+}
+
+.features_item span {
+    font-size: 24px;
+    color: #fefefe;
+    position: relative;
+    top: -10px;
+    margin-left: 5px;
+}
+
+.hero_bg, .hero_img {
+    position: absolute;
+}
+
+.hero_bg {
+    top: 1px;
+    right: 200px;
+}
+
+.hero_img {
+    bottom: -20px;
+    right: 250px;
 }
