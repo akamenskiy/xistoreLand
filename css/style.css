@@ -101,12 +101,18 @@ a {
     text-decoration: none;
 }
 
+.h2 {
+    color: #161616;
+    font-size: 48px;
+    font-weight: 300;
+}
+
 /***************        fonts       ****************/
 .font_1 {
     font-family: 'Roboto', sans-serif;
 }
 
-.font_2{
+.font_2 {
     font-family: 'logo', sans-serif;
 }
 
@@ -330,7 +336,7 @@ a {
 }
 
 .discount_item-wrap {
-    padding:30px 0 0 35px;
+    padding: 30px 0 0 35px;
     position: relative;
     height: 275px;
 }
@@ -362,7 +368,7 @@ a {
     position: absolute;
     z-index: 1;
     top: 60px;
-    right:10px;
+    right: 10px;
 }
 
 .discount_percentage {
@@ -385,19 +391,100 @@ a {
 }
 
 .discount_item-wrap__1 {
-    border-right:1px dashed #ffffff;
+    border-right: 1px dashed #ffffff;
 }
 
 .discount_item-wrap__2 {
     background: url("../img/card_bg.png") -15px bottom no-repeat;
-    border-right:1px dashed #ffffff;
+    border-right: 1px dashed #ffffff;
 }
 
 .discount_item-wrap__3 {
     background: url("../img/deliv_bg.png") -150px 80px no-repeat;
 }
+
 .scissors {
     position: absolute;
     top: 30px;
     right: -2px;
+}
+
+/************    price    ************/
+
+.price {
+    width: 1240px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.price_header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.price_list {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.price_item {
+    position: relative;
+    width: 30%;
+    padding: 36px 0 0 70px;
+    color: #ffffff;
+    float: left;
+    height: 200px;
+}
+
+.price_item__left {
+    background-color: #242b30;
+}
+
+.price_item__middle {
+    background-color: #ff4953;
+    margin: 0 5%;
+}
+
+.price_item__right {
+    background-color: #5fa261;
+    margin-right: 0;
+}
+
+.price_price {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.price_currency {
+    font-weight: 400;
+}
+
+.price_desc {
+    font-size: 24px;
+}
+
+.price_icon .icon{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 18px;
+    right: 25px;
+}
+
+.price_button {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #dbdfe2;
+    padding: 20px 20px 20px 40px;
+    margin: 0 auto;
+}
+
+.price_button img{
+    vertical-align: middle;
+    margin-left: 60px;
 }
