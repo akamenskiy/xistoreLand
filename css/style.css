@@ -4,9 +4,9 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, strong, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol, ul, li, sub, sup,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -69,6 +69,13 @@ html {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'logo';
+    src: url('../fonts/tt-masters-demo.mastersdemoblack.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
 /*************************Main CSS***********************************/
 
 /***************    General CSS    ***************/
@@ -94,10 +101,13 @@ a {
     text-decoration: none;
 }
 
-
 /***************        fonts       ****************/
 .font_1 {
     font-family: 'Roboto', sans-serif;
+}
+
+.font_2{
+    font-family: 'logo', sans-serif;
 }
 
 /****************       nav         *****************/
@@ -119,11 +129,11 @@ a {
     font-weight: 400;
 }
 
-.nav_item:first-child{
+.nav_item:first-child {
     padding-left: 0;
 }
 
-.nav_item:last-child{
+.nav_item:last-child {
     padding-right: 0;
 }
 
@@ -146,18 +156,19 @@ a {
     vertical-align: middle;
 }
 
-.about_item:first-child{
+.about_item:first-child {
     padding-left: 0;
 }
-.about_item:last-child{
+
+.about_item:last-child {
     padding-right: 0;
 }
 
-.about_item__time, .about_item__address, .about_item__phone{
+.about_item__time, .about_item__address, .about_item__phone {
     padding-top: 0;
 }
 
-.about_item__phone{
+.about_item__phone {
     width: 26%;
 }
 
@@ -166,21 +177,20 @@ a {
     width: 14%;
 }
 
-.about_icon{
+.about_icon {
     display: inline-block;
     vertical-align: top;
 }
 
-.icon-logo{
+.icon-logo {
     width: 190px;
     height: 86px;
 }
 
-.icon-clock, .icon-geo_linear, .icon-phone{
+.icon-clock, .icon-geo_linear, .icon-phone {
     width: 30px;
     height: 30px;
 }
-
 
 .about_content {
     display: inline-block;
@@ -192,7 +202,7 @@ a {
     line-height: 16px;
 }
 
-.about_title{
+.about_title {
     margin-bottom: 5px;
 }
 
@@ -250,4 +260,144 @@ a {
 .hero_img {
     bottom: -20px;
     right: 250px;
+}
+
+/***************    gallery    **************/
+
+.gallery {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.gallery_item img {
+    margin: 0 auto;
+}
+
+.gallery_item:focus {
+    outline: 0;
+}
+
+.slick-arrow {
+    font-size: 0;
+    line-height: 0;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    outline: 0;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+
+}
+
+.slick-prev {
+    background: url("../img/arrow_s_left.svg") no-repeat;
+    left: -15px;
+}
+
+.slick-next {
+    background: url("../img/arrow_s_right.svg") no-repeat;
+    right: -25px;
+}
+
+/**************     MAIN     ******************/
+
+/**************   discount   ******************/
+
+.cntBlock_discount {
+    background: linear-gradient(to right, #ff6700 50%, #ffa006 50%);
+}
+
+.discount_item {
+    float: left;
+}
+
+.discount_item {
+    width: 33%;
+}
+
+.discount_item__1 {
+    background-color: #ff6700;
+    overflow: hidden;
+}
+
+.discount_item__2 {
+    background-color: #d13611;
+}
+
+.discount_item__3 {
+    background-color: #ffa006;
+}
+
+.discount_item-wrap {
+    padding:30px 0 0 35px;
+    position: relative;
+    height: 275px;
+}
+
+.discount_item__1 .discount_item-wrap {
+    padding-left: 20px;
+}
+
+.discount_title {
+    color: #f6f5f5;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.discount_title div:first-child {
+    margin-bottom: 5px;
+}
+
+.discount_title .font_2 {
+    font-size: 48px;
+}
+
+.discount_item__1 .discount_title div:nth-child(3), .discount_item__3 .discount_title div:nth-child(2) {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.discount_img__logo {
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    right:10px;
+}
+
+.discount_percentage {
+    position: relative;
+    top: 35px;
+    left: 40px;
+    font-weight: 700;
+    font-size: 160px;
+    color: #ffe887;
+    -webkit-transform: rotate(22deg);
+    -moz-transform: rotate(22deg);
+    -ms-transform: rotate(22deg);
+    -o-transform: rotate(22deg);
+    transform: rotate(22deg);
+}
+
+.discount_percentage sup {
+    vertical-align: top;
+    font-size: 80px;
+}
+
+.discount_item-wrap__1 {
+    border-right:1px dashed #ffffff;
+}
+
+.discount_item-wrap__2 {
+    background: url("../img/card_bg.png") -15px bottom no-repeat;
+    border-right:1px dashed #ffffff;
+}
+
+.discount_item-wrap__3 {
+    background: url("../img/deliv_bg.png") -150px 80px no-repeat;
+}
+.scissors {
+    position: absolute;
+    top: 30px;
+    right: -2px;
 }

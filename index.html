@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>XiStore Service</title>
 </head>
@@ -15,111 +15,191 @@
 <!------------------------------        HEADER     ------------------------->
 
 <header>
-<!------------------------------        nav        ------------------------->
+    <!------------------------------        nav        ------------------------->
 
-<nav>
-    <div class="cntBlock cntBlock_nav">
-        <div class="container nav">
-            <ul class="nav_list font_1 clearfix">
-                <li class="nav_item"><a href="#" class="nav_link">О нас</a></li>
-                <li class="nav_item"><a href="#" class="nav_link">Скидка</a></li>
-                <li class="nav_item"><a href="#" class="nav_link">Цена</a></li>
-                <li class="nav_item"><a href="#" class="nav_link">Запчасти</a></li>
-                <li class="nav_item"><a href="#" class="nav_link">Проверка заказа</a></li>
-                <li class="nav_item"><a href="#" class="nav_link">Контакты</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!------------------------------       about       -------------------------->
-
-<section>
-    <div class="cntBlock cntBlock_about">
-        <div class="container about">
-            <div class="about_list font_1">
-                <div class="about_item">
-                    <svg class="icon icon-logo"><use xlink:href="img/symbol-defs.svg#icon-logo"></use></svg>
-                </div>
-                <div class="about_item about_item__desc">
-                    <div class="about_desc">
-                        <div>Первый фирменный</div>
-                        <div>сервисный центр</div>
-                        <div>Xiomi в Беларуси</div>
-                    </div>
-                </div>
-                <div class="about_item about_item__time">
-                    <div class="about_icon"><svg class="icon icon-clock"><use xlink:href="img/symbol-defs.svg#icon-clock"></use></svg></div>
-                    <div class="about_content">
-                        <div class="about_title">График работы</div>
-                        <div class="about_desc">
-                            <div>Пн.-Пт.: с 11 до 20</div>
-                            <div>Сб., Вс. выходной</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about_item about_item__address">
-                    <div class="about_icon"><svg class="icon icon-geo_linear"><use xlink:href="img/symbol-defs.svg#icon-geo_linear"></use></svg></div>
-                    <div class="about_content">
-                        <div class="about_title">Адрес</div>
-                        <div class="about_desc">
-                            <div>г. Минск, Чернышевского 10,</div>
-                            <div>офис 13 (1 этаж)</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about_item about_item__phone">
-                    <div class="about_icon"><svg class="icon icon-phone"><use xlink:href="img/symbol-defs.svg#icon-phone"></use></svg></div>
-                    <div class="about_content">
-                        <div class="about_title"><a href="tel:+375296792121">676 21 21 единый</a></div>
-                        <div class="about_desc">
-                            <div>Единый номер MTC, Velcom и Life</div>
-                            <div>Перезвоните мне</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-------------------------------------         hero        ------------------------------------------------->
-
-<section>
-    <div class="cntBlock cntBlock_hero">
-        <div class="container hero font_1">
-            <img src="img/hero_bg.png" alt="фон" class="hero_bg">
-            <div class="hero_content">
-                <h1 class="hero_title">
-                    <div>Сервисный ремонт</div>
-                    <div>Xiomi в Беларуси</div></h1>
-                <ul class="features">
-                    <li class="features_item">
-                        <svg class="icon icon-clock2"><use xlink:href="img/symbol-defs.svg#icon-clock2"></use></svg>
-                        <span>Быстро</span>
-                    </li>
-                    <li class="features_item">
-                        <svg class="icon icon-cool"><use xlink:href="img/symbol-defs.svg#icon-cool"></use></svg>
-                        <span>Качественно</span>
-                    </li>
-                    <li class="features_item">
-                        <svg class="icon icon-shield"><use xlink:href="img/symbol-defs.svg#icon-shield"></use></svg>
-                        <span>Гарантия</span>
-                    </li>
+    <nav>
+        <div class="cntBlock cntBlock_nav">
+            <div class="container nav">
+                <ul class="nav_list font_1 clearfix">
+                    <li class="nav_item"><a href="#" class="nav_link">О нас</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Скидка</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Цена</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Запчасти</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Проверка заказа</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Контакты</a></li>
                 </ul>
             </div>
-            <img src="img/hero_img.png" alt="Сервисный ремонт Xiomi в Беларуси" class="hero_img">
         </div>
-    </div>
-</section>
+    </nav>
+
+    <!------------------------------       about       -------------------------->
+
+    <section>
+        <div class="cntBlock cntBlock_about">
+            <div class="container about">
+                <div class="about_list font_1">
+                    <div class="about_item">
+                        <svg class="icon icon-logo">
+                            <use xlink:href="img/symbol-defs.svg#icon-logo"></use>
+                        </svg>
+                    </div>
+                    <div class="about_item about_item__desc">
+                        <div class="about_desc">
+                            <div>Первый фирменный</div>
+                            <div>сервисный центр</div>
+                            <div>Xiomi в Беларуси</div>
+                        </div>
+                    </div>
+                    <div class="about_item about_item__time">
+                        <div class="about_icon">
+                            <svg class="icon icon-clock">
+                                <use xlink:href="img/symbol-defs.svg#icon-clock"></use>
+                            </svg>
+                        </div>
+                        <div class="about_content">
+                            <div class="about_title">График работы</div>
+                            <div class="about_desc">
+                                <div>Пн.-Пт.: с 11 до 20</div>
+                                <div>Сб., Вс. выходной</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about_item about_item__address">
+                        <div class="about_icon">
+                            <svg class="icon icon-geo_linear">
+                                <use xlink:href="img/symbol-defs.svg#icon-geo_linear"></use>
+                            </svg>
+                        </div>
+                        <div class="about_content">
+                            <div class="about_title">Адрес</div>
+                            <div class="about_desc">
+                                <div>г. Минск, Чернышевского 10,</div>
+                                <div>офис 13 (1 этаж)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about_item about_item__phone">
+                        <div class="about_icon">
+                            <svg class="icon icon-phone">
+                                <use xlink:href="img/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                        <div class="about_content">
+                            <div class="about_title"><a href="tel:+375296792121">676 21 21 единый</a></div>
+                            <div class="about_desc">
+                                <div>Единый номер MTC, Velcom и Life</div>
+                                <div>Перезвоните мне</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------------------         hero        ------------------------------------------------->
+
+    <section>
+        <div class="cntBlock cntBlock_hero">
+            <div class="container hero font_1">
+                <img src="img/hero_bg.png" alt="фон" class="hero_bg">
+                <div class="hero_content">
+                    <h1 class="hero_title">
+                        <div>Сервисный ремонт</div>
+                        <div>Xiomi в Беларуси</div>
+                    </h1>
+                    <ul class="features">
+                        <li class="features_item">
+                            <svg class="icon icon-clock2">
+                                <use xlink:href="img/symbol-defs.svg#icon-clock2"></use>
+                            </svg>
+                            <span>Быстро</span>
+                        </li>
+                        <li class="features_item">
+                            <svg class="icon icon-cool">
+                                <use xlink:href="img/symbol-defs.svg#icon-cool"></use>
+                            </svg>
+                            <span>Качественно</span>
+                        </li>
+                        <li class="features_item">
+                            <svg class="icon icon-shield">
+                                <use xlink:href="img/symbol-defs.svg#icon-shield"></use>
+                            </svg>
+                            <span>Гарантия</span>
+                        </li>
+                    </ul>
+                </div>
+                <img src="img/hero_img.png" alt="Сервисный ремонт Xiomi в Беларуси" class="hero_img">
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------------          gallery          -------------------------->
+
+    <section>
+        <div class="cntBlock cntBlock_gallery">
+            <div class="container gallery">
+                <div class="gallery_slider">
+                    <div class="gallery_item"><img src="img/slider_1.jpg" alt=""></div>
+                    <div class="gallery_item"><img src="img/slider_2.jpg" alt=""></div>
+                    <div class="gallery_item"><img src="img/slider_3.jpg" alt=""></div>
+                    <div class="gallery_item"><img src="img/slider_4.jpg" alt=""></div>
+                    <div class="gallery_item"><img src="img/slider_5.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
 </header>
 
+<!-------------------------------          MAIN             -------------------------->
+<main>
+    <!-----------------------------          discount           -------------------------->
+
+    <section>
+        <div class="cntBlock cntBlock_discount">
+            <div class="container discount clearfix font_1">
+                <div class="discount_item discount_item__1">
+                    <div class="discount_item-wrap discount_item-wrap__1">
+                        <h3 class="discount_title">
+                            <div>Для клиентов магазина</div>
+                            <div class="font_2">xistore.by</div>
+                            <div>скидка 30%</div>
+                        </h3>
+                        <img src="img/scissors.png" alt="" class="scissors">
+                        <img src="img/logo.png" alt="" class="discount_img discount_img__logo">
+                        <div class="discount_percentage">
+                            -30<sup>%</sup>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount_item discount_item__2">
+                    <div class="discount_item-wrap  discount_item-wrap__2">
+                        <h3 class="discount_title">
+                            <div title="Карта Халва">Плати картой</div>
+                        </h3>
+                        <img src="img/scissors.png" alt="" class="scissors">
+                    </div>
+                </div>
+                <div class="discount_item discount_item__3">
+                    <div class="discount_item-wrap  discount_item-wrap__3">
+                        <h3 class="discount_title">
+                            <div>Забираем и дотсавляем</div>
+                            <div>курьерами</div>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
 <!-------------------------------           js              -------------------------->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"
         integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script src="js/retina.min.js"></script>
 <script src="js/svgxuse.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
