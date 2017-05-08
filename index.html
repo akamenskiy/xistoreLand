@@ -37,62 +37,72 @@
     <section>
         <div class="cntBlock cntBlock_about">
             <div class="container about">
-                <div class="about_list font_1">
-                    <div class="about_item">
-                        <svg class="icon icon-logo">
-                            <use xlink:href="img/symbol-defs.svg#icon-logo"></use>
-                        </svg>
-                    </div>
-                    <div class="about_item about_item__desc">
-                        <div class="about_desc">
-                            <div>Первый фирменный</div>
-                            <div>сервисный центр</div>
-                            <div>Xiomi в Беларуси</div>
-                        </div>
-                    </div>
-                    <div class="about_item about_item__time">
-                        <div class="about_icon">
-                            <svg class="icon icon-clock">
-                                <use xlink:href="img/symbol-defs.svg#icon-clock"></use>
-                            </svg>
-                        </div>
-                        <div class="about_content">
-                            <div class="about_title">График работы</div>
-                            <div class="about_desc">
-                                <div>Пн.-Пт.: с 11 до 20</div>
-                                <div>Сб., Вс. выходной</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about_item about_item__address">
-                        <div class="about_icon">
-                            <svg class="icon icon-geo_linear">
-                                <use xlink:href="img/symbol-defs.svg#icon-geo_linear"></use>
-                            </svg>
-                        </div>
-                        <div class="about_content">
-                            <div class="about_title">Адрес</div>
-                            <div class="about_desc">
-                                <div>г. Минск, Чернышевского 10,</div>
-                                <div>офис 13 (1 этаж)</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about_item about_item__phone">
-                        <div class="about_icon">
-                            <svg class="icon icon-phone">
-                                <use xlink:href="img/symbol-defs.svg#icon-phone"></use>
-                            </svg>
-                        </div>
-                        <div class="about_content">
-                            <div class="about_title"><a href="tel:+375296792121">676 21 21 единый</a></div>
-                            <div class="about_desc">
-                                <div>Единый номер MTC, Velcom и Life</div>
-                                <div>Перезвоните мне</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <ul class="about_list font_1 clearfix">
+                    <li class="about_item">
+                        <ul class="logo-list">
+                            <li class="logo-list_item logo-list_item__logo">
+                                <svg class="icon icon-logo">
+                                    <use xlink:href="img/symbol-defs.svg#icon-logo"></use>
+                                </svg>
+                            </li>
+                            <li class="logo-list_item logo-list_item__desc">
+                                <div class="logo-list_desc">
+                                    <div>Первый фирменный</div>
+                                    <div>сервисный центр</div>
+                                    <div>Xiomi в Беларуси</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="about_item">
+                        <ul class="contacts_list contacts_list__about">
+
+                            <li class="contacts_item contacts_item__about contacts_item__time">
+                                <div class="contacts_icon">
+                                    <svg class="icon icon-clock">
+                                        <use xlink:href="img/symbol-defs.svg#icon-clock"></use>
+                                    </svg>
+                                </div>
+                                <div class="contacts_content">
+                                    <div class="contacts_title">График работы</div>
+                                    <div class="contacts_desc">
+                                        <div>Пн.-Пт.: с 11 до 20</div>
+                                        <div>Сб., Вс. выходной</div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="contacts_item contacts_item__about contacts_item__address">
+                                <div class="contacts_icon">
+                                    <svg class="icon icon-geo_linear">
+                                        <use xlink:href="img/symbol-defs.svg#icon-geo_linear"></use>
+                                    </svg>
+                                </div>
+                                <div class="contacts_content">
+                                    <div class="contacts_title">Адрес</div>
+                                    <div class="contacts_desc">
+                                        <div>г. Минск, Чернышевского 10,</div>
+                                        <div>офис 13 (1 этаж)</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contacts_item contacts_item__about contacts_item__phone">
+                                <div class="contacts_icon">
+                                    <svg class="icon icon-phone">
+                                        <use xlink:href="img/symbol-defs.svg#icon-phone"></use>
+                                    </svg>
+                                </div>
+                                <div class="contacts_content">
+                                    <div class="contacts_title"><a href="tel:+375296792121">676 21 21 единый</a></div>
+                                    <div class="contacts_desc">
+                                        <div>Единый номер MTC, Velcom и Life</div>
+                                        <div>Перезвоните мне</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -192,6 +202,8 @@
         </div>
     </section>
 
+    <!-----------------------------          price         --------------------------->
+
     <section>
         <div class="cntBlock cntBlock_price">
             <div class="container price font_1">
@@ -272,7 +284,68 @@
             </div>
         </div>
     </section>
-    <section class="cntBlock cntBlock_map"></section>
+
+    <!--------------------------       contacts        ---------------------------->
+
+    <section class="cntBlock cntBlock_contacts">
+        <div class="contacts font_1">
+            <ul class="contacts_list">
+
+                <li class="contacts_item contacts_item__time">
+                    <div class="contacts_icon">
+                        <svg class="icon icon-clock">
+                            <use xlink:href="img/symbol-defs.svg#icon-clock"></use>
+                        </svg>
+                    </div>
+                    <div class="contacts_content">
+                        <div class="contacts_title">График работы</div>
+                        <div class="contacts_desc">
+                            <div>Пн.-Пт.: с 11 до 20</div>
+                            <div>Сб., Вс. выходной</div>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="contacts_item contacts_item__phone">
+                    <div class="contacts_icon">
+                        <svg class="icon icon-phone">
+                            <use xlink:href="img/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                    <div class="contacts_content">
+                        <div class="contacts_title"><a href="tel:+375172902700">+375 17 290 27 00</a></div>
+                        <div class="contacts_title"><a href="tel:+375292000470">+375 29 200 04 70</a></div>
+                    </div>
+                </li>
+                </li>
+                <li class="contacts_item contacts_item__address">
+                    <div class="contacts_icon">
+                        <svg class="icon icon-geo_linear">
+                            <use xlink:href="img/symbol-defs.svg#icon-geo_linear"></use>
+                        </svg>
+                    </div>
+                    <div class="contacts_content">
+                        <div class="contacts_title">
+                            <div>г. Минск,</div>
+                            <div>Чернышевского 10,</div>
+                            <div>офис 13 (1 этаж)</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="voyage clearfix">
+                <div class="voyage_arrow"></div>
+                <div class="voyage_content"><img src="img/3d_icon.png" alt="">
+                    <a class="voyage_desc">
+                        <div>Смотреть</div>
+                        <div>3D тур</div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1174.614932120512!2d27.597504315639807!3d53.92765999444407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf0ef6faf4c7%3A0xc5d4ea80b970c1ad!2z0YPQuy4g0KfQtdGA0L3Ri9GI0LXQstGB0LrQvtCz0L4gMTAsINCc0LjQvdGB0LosINCR0LXQu9Cw0YDRg9GB0Yw!5e0!3m2!1sru!2sru!4v1494262391864" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
 
 </main>
 

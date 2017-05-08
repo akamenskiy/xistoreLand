@@ -88,6 +88,7 @@ html {
 
 .cntBlock {
     width: 100%;
+    min-width: 1280px;
 }
 
 .container {
@@ -151,39 +152,60 @@ a {
 
 .about_list {
     width: 100%;
-    display: table;
     padding: 8px 0;
 }
 
 .about_item {
-    padding: 10px;
-    width: 20%;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.about_item:first-child {
-    padding-left: 0;
+    float: left;
 }
 
 .about_item:last-child {
-    padding-right: 0;
+    padding-top: 30px;
 }
 
-.about_item__time, .about_item__address, .about_item__phone {
+.about_item:first-child {
+    margin-right: 40px;
+}
+
+
+
+.logo-list_item {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo-list_item__logo {
+    padding-right: 20px;
+    border-right: 1px solid #9a9a9a;
+}
+
+.logo-list_item__desc {
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+.logo-list_desc {
+    color: #423d45;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/*contacts_list*/
+
+.contacts_item__about {
+    margin-right: 50px;
+}
+
+.contacts_item__about {
+    float: left;
+}
+
+.contacts_item__time, .contacts_item__address, .contacts_item__phone {
     padding-top: 0;
 }
 
-.about_item__phone {
-    width: 26%;
-}
-
-.about_item__desc {
-    border-left: 1px solid #9a9a9a;
-    width: 14%;
-}
-
-.about_icon {
+.contacts_icon {
     display: inline-block;
     vertical-align: top;
 }
@@ -198,31 +220,32 @@ a {
     height: 30px;
 }
 
-.about_content {
+.contacts_content {
     display: inline-block;
 }
 
-.about_desc {
-    color: #423d45;
-    font-size: 12px;
-    line-height: 16px;
-}
-
-.about_title {
+.contacts_title {
     margin-bottom: 5px;
 }
 
-.about_title, .about_title a {
+.contacts_title, .contacts_title a {
     color: #565656;
     font-size: 24px;
     line-height: 25px;
+}
+
+.contacts_desc {
+    /* Style for "Пн.-Пт.: с" */
+    color: #423d45;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
 }
 
 /**************   hero    ****************/
 
 .cntBlock_hero {
     background-color: #242b30;
-    min-width: 1060px;
 }
 
 .hero {
@@ -481,7 +504,7 @@ a {
     background-color: #ffffff;
     border: 1px solid #dbdfe2;
     padding: 20px 20px 20px 40px;
-
+    cursor: hand;
 }
 
 .price_button {
@@ -595,6 +618,81 @@ a {
 
 .repair-check_button img {
     margin-left: 30px;
+}
+
+/*********************      map      **********************/
+
+.cntBlock_contacts {
+    position: relative;
+}
+
+.contacts {
+    width: 380px;
+    height: 340px;
+    position: absolute;
+    top: 65px;
+    left: 375px;
+    background-color: #ffffff;
+    padding: 45px 60px;
+    -webkit-box-shadow: 10px 10px 10px rgba(0,0,0,0.08);
+    -moz-box-shadow: 10px 10px 10px rgba(0,0,0,0.08);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.08);
+}
+
+.contacts_item {
+    margin-bottom: 20px;
+}
+
+.voyage {
+    position: absolute;
+    bottom: 70px;
+    right: -150px;
+}
+
+.voyage_arrow {
+    width: 40px;
+    height: 40px;
+    background-color: #ff6700;
+    box-shadow: 10px 10px 13px rgba(255, 103, 0, 0.55);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 24px;
+    left: -10px;
+}
+
+.voyage_content{
+    position: relative;
+    box-shadow: 0 10px 13px rgba(255, 103, 0, 0.55);
+    width: 195px;
+    padding: 8px;
+    background-color: #ff6700;
+}
+
+.voyage_desc {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #ffffff;
+    text-decoration-line: underline;
+    -moz-text-decoration-line: underline;
+    text-decoration-style: dashed;
+    -moz-text-decoration-style: dashed;
+    -webkit-text-decoration-style: dashed;
+    text-decoration-color: #f9f9f9;
+    -moz-text-decoration-color: #f9f9f9;
+    -webkit-text-decoration-color: #f9f9f9;
+    cursor: hand;
+}
+
+.cntBlock_contacts iframe{
+    display: block;
+    height: 470px;
+    width: 100%;
 }
 
 /*********************    FOOTER     **********************/
