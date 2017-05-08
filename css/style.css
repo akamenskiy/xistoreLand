@@ -255,6 +255,7 @@ a {
 .hero {
     padding: 82px 86px 72px;
     position: relative;
+    background: url("../img/hero_bg.png") fixed 720px center no-repeat;
 }
 
 .hero_content {
@@ -556,7 +557,11 @@ a {
 }
 
 .repair-check {
-    background: url("../img/hero_bg.png");
+    background-image: url("../img/hero_bg.png"), url("../img/hero_bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 300px center, 900px center;
+
 }
 .repair-check_bg-container {
     background: url("../img/repair_bg.png") no-repeat center 135px;
