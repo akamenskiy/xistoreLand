@@ -521,3 +521,78 @@ a {
     line-height: 30px;
     margin-bottom: 20px;
 }
+
+/**************     repair-check     ************/
+
+.cntBlock_repair-check {
+    background-color: #242b30;
+}
+
+.repair-check {
+    background: url("../img/hero_bg.png");
+}
+.repair-check_bg-container {
+    background: url("../img/repair_bg.png") no-repeat center 135px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.repair-check_content {
+    border: 2px dashed #ff6700;
+    background-color: rgba(36, 43, 48, 0.63);
+    padding: 12px;
+    width: 595px;
+    margin: 0 auto;
+}
+.repair-check_form-wrap {
+    background: #ffffff;
+    padding: 30px 50px;
+}
+
+.repair-check_header {
+    margin-bottom: 30px;
+}
+
+.repair-check_form label {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#input__phone {
+    font-size: 24px;
+    font-weight: 400;
+    color: #b5b5b5;
+    padding: 20px 18px;
+    border: 1px solid #dbdfe2;
+    width: 455px;
+    margin-bottom: 13px;
+}
+
+.input-example {
+    font-size: 16px;
+    color: #b5b5b5;
+    font-weight: 400;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.input-example img {
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+.input-example span{
+    font-weight: 700;
+}
+
+.repair-check_button {
+    background-color: #ff6700;
+    color: #ffffff;
+}
+
+.repair-check_button img {
+    margin-left: 30px;
+}
