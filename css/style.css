@@ -121,6 +121,9 @@ a {
 
 .cntBlock_nav {
     background-color: #333333;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 .nav_item {
@@ -148,6 +151,7 @@ a {
 
 .cntBlock_about {
     background-color: #ffffff;
+    margin-top: 52px;
 }
 
 .about_list {
@@ -504,7 +508,7 @@ a {
     background-color: #ffffff;
     border: 1px solid #dbdfe2;
     padding: 20px 20px 20px 40px;
-    cursor: hand;
+    cursor: pointer;
 }
 
 .price_button {
@@ -686,7 +690,7 @@ a {
     text-decoration-color: #f9f9f9;
     -moz-text-decoration-color: #f9f9f9;
     -webkit-text-decoration-color: #f9f9f9;
-    cursor: hand;
+    cursor: pointer;
 }
 
 .cntBlock_contacts iframe{
