@@ -472,7 +472,7 @@ a {
     right: 25px;
 }
 
-.price_button {
+.button {
     display: block;
     font-size: 24px;
     font-weight: 400;
@@ -481,10 +481,43 @@ a {
     background-color: #ffffff;
     border: 1px solid #dbdfe2;
     padding: 20px 20px 20px 40px;
+
+}
+
+.price_button {
     margin: 0 auto;
 }
 
-.price_button img{
+.button img{
     vertical-align: middle;
     margin-left: 60px;
+}
+
+/***************   spare     *******************/
+
+.cntBlock_spare {
+    background-color: #f5f5f5;
+}
+
+.spare {
+    background: url("../img/tools_bg.png") no-repeat left bottom;
+    padding: 145px 30px 115px;
+    height: 500px;
+}
+
+.spare_content {
+    width: 50%;
+    float: right;
+    color: #161616;
+}
+
+.spare_header {
+    line-height: 72px;
+}
+
+.spare_desc {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
