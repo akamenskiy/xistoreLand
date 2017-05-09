@@ -60,16 +60,6 @@ html {
 /*********************************Fonts********************************************/
 
 @font-face {
-    font-family: flaticon;
-    src: url(../fonts/flaticon.eot);
-    src: url(../fonts/flaticon.svg);
-    src: url(../fonts/flaticon.ttf);
-    src: url(../fonts/flaticon.woff);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'logo';
     src: url('../fonts/tt-masters-demo.mastersdemoblack.otf');
     font-style: normal;
@@ -170,8 +160,6 @@ a {
 .about_item:first-child {
     margin-right: 40px;
 }
-
-
 
 .logo-list_item {
     float: left;
@@ -492,7 +480,7 @@ a {
     font-size: 24px;
 }
 
-.price_icon .icon{
+.price_icon .icon {
     width: 60px;
     height: 60px;
     position: absolute;
@@ -516,7 +504,7 @@ a {
     margin: 0 auto;
 }
 
-.button img{
+.button img {
     vertical-align: middle;
     margin-left: 60px;
 }
@@ -563,6 +551,7 @@ a {
     background-position: 300px center, 900px center;
 
 }
+
 .repair-check_bg-container {
     background: url("../img/repair_bg.png") no-repeat center 135px;
     padding-top: 50px;
@@ -576,6 +565,7 @@ a {
     width: 595px;
     margin: 0 auto;
 }
+
 .repair-check_form-wrap {
     background: #ffffff;
     padding: 30px 50px;
@@ -616,7 +606,7 @@ a {
     vertical-align: bottom;
 }
 
-.input-example span{
+.input-example span {
     font-weight: 700;
 }
 
@@ -643,9 +633,9 @@ a {
     left: 375px;
     background-color: #ffffff;
     padding: 45px 60px;
-    -webkit-box-shadow: 10px 10px 10px rgba(0,0,0,0.08);
-    -moz-box-shadow: 10px 10px 10px rgba(0,0,0,0.08);
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.08);
+    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.08);
 }
 
 .contacts_item {
@@ -673,7 +663,7 @@ a {
     left: -10px;
 }
 
-.voyage_content{
+.voyage_content {
     position: relative;
     box-shadow: 0 10px 13px rgba(255, 103, 0, 0.55);
     width: 195px;
@@ -698,7 +688,7 @@ a {
     cursor: pointer;
 }
 
-.cntBlock_contacts iframe{
+.cntBlock_contacts iframe {
     display: block;
     height: 470px;
     width: 100%;
