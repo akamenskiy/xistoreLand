@@ -5,6 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Сервисный ремонт
+Xiomi в Беларуси">
+    <meta name=keywords" content="xiomi, сервисный ремонт">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -20,7 +23,7 @@
     <nav>
         <div class="cntBlock cntBlock_nav">
             <div class="container nav">
-                <ul class="nav_list font_1 clearfix">
+                <ul class="nav_list clearfix">
                     <li class="nav_item"><a href="#" class="nav_link">О нас</a></li>
                     <li class="nav_item"><a href="#" class="nav_link">Скидка</a></li>
                     <li class="nav_item"><a href="#" class="nav_link">Цена</a></li>
@@ -37,8 +40,8 @@
     <section>
         <div class="cntBlock cntBlock_about">
             <div class="container about">
-                <ul class="about_list font_1 clearfix">
-                    <li class="about_item">
+                <div class="about_list clearfix">
+                    <div class="about_item">
                         <ul class="logo-list">
                             <li class="logo-list_item logo-list_item__logo">
                                 <svg class="icon icon-logo">
@@ -53,8 +56,8 @@
                                 </div>
                             </li>
                         </ul>
-                    </li>
-                    <li class="about_item">
+                    </div>
+                    <div class="about_item">
                         <ul class="contacts_list contacts_list__about">
 
                             <li class="contacts_item contacts_item__about contacts_item__time">
@@ -101,8 +104,8 @@
                                 </div>
                             </li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -111,7 +114,7 @@
 
     <section>
         <div class="cntBlock cntBlock_hero">
-            <div class="container hero font_1">
+            <div class="container hero">
                 <div class="hero_content">
                     <h1 class="hero_title">
                         <div>Сервисный ремонт</div>
@@ -166,7 +169,7 @@
 
     <section>
         <div class="cntBlock cntBlock_discount">
-            <div class="container discount clearfix font_1">
+            <div class="container discount clearfix">
                 <div class="discount_item discount_item__1">
                     <div class="discount_item-wrap discount_item-wrap__1">
                         <h3 class="discount_title">
@@ -205,7 +208,7 @@
 
     <section>
         <div class="cntBlock cntBlock_price">
-            <div class="container price font_1">
+            <div class="container price">
                 <h2 class="h2 price_header">Цена</h2>
                 <ul class="price_list clearfix">
                     <li class="price_item price_item__left">
@@ -242,7 +245,7 @@
                         </div>
                     </li>
                 </ul>
-                <button class="button price_button font_1">Смотреть все услуги <img src="img/arrow_down.png" alt="">
+                <button class="button price_button">Смотреть все услуги <img src="img/arrow_down.png" alt="">
                 </button>
             </div>
         </div>
@@ -252,12 +255,12 @@
 
     <section>
         <div class="cntBlock cntBlock_spare">
-            <div class="container spare font_1 clearfix">
+            <div class="container spare clearfix">
                 <div class="spare_content">
                     <h2 class="h2 spare_header">Запчасти</h2>
                     <p class="spare_desc">Тачскрины Xiaomi, Meizu (сенсорные экраны) и дисплеи, модули (тач+дисплей в
                         сборе), аккумуляторы, задние крышки, динамики.</p>
-                    <button class="button spare_button font_1">Смотреть список запчастей <img
+                    <button class="button spare_button">Смотреть список запчастей <img
                             src="img/arrow_tools_icon.png" alt=""></button>
                 </div>
             </div>
@@ -268,7 +271,7 @@
 
     <section>
         <div class="cntBlock cntBlock_repair-check">
-            <div class="container repair-check font_1">
+            <div class="container repair-check">
                 <div class="repair-check_bg-container">
                     <div class="repair-check_content">
                         <div class="repair-check_form-wrap">
@@ -276,7 +279,10 @@
                                 <h2 class="h2 repair-check_header">Проверка
                                     хода ремонта</h2>
                                 <label for="input__phone">Номер телефона</label>
-                                <input id="input__phone" type="tel" value="+375">
+                                <div class="input__phone-wrap">
+                                    <span>+375</span>
+                                    <input id="input__phone" type="tel">
+                                </div>
                                 <div class="input-example"><img src="img/info_icon.png" alt=""><span>Например:</span> 29
                                     76543210
                                 </div>
@@ -293,7 +299,7 @@
     <!--------------------------       contacts        ---------------------------->
 
     <section class="cntBlock cntBlock_contacts">
-        <div class="contacts font_1">
+        <div class="contacts">
             <ul class="contacts_list">
 
                 <li class="contacts_item contacts_item__time">
@@ -359,7 +365,7 @@
 
 <footer>
     <div class="cntBlock cntBlock_footer">
-        <div class="container footer font_1 clearfix">
+        <div class="container footer clearfix">
             <div class="copy">2014-2017 ООО «Новый символ»</div>
             <div class="social">
                 <a href="#" class="social_link social_link__fb">
@@ -393,6 +399,7 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script src="js/retina.min.js"></script>
 <script src="js/svgxuse.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=xistore-dt&callback=myMap"></script>
 <script src="js/script.js"></script>
 
 </body>
