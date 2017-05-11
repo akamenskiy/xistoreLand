@@ -4,9 +4,9 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, strong, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol, ul, li, sub, sup,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -60,13 +60,10 @@ html {
 /*********************************Fonts********************************************/
 
 @font-face {
-    font-family: flaticon;
-    src: url(../fonts/flaticon.eot);
-    src: url(../fonts/flaticon.svg);
-    src: url(../fonts/flaticon.ttf);
-    src: url(../fonts/flaticon.woff);
-    font-weight: normal;
+    font-family: 'logo';
+    src: url('../fonts/tt-masters-demo.mastersdemoblack.otf');
     font-style: normal;
+    font-weight: normal;
 }
 
 /*************************Main CSS***********************************/
@@ -81,10 +78,11 @@ html {
 
 .cntBlock {
     width: 100%;
+    min-width: 1240px;
 }
 
 .container {
-    width: 1280px;
+    width: 1220px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -94,36 +92,50 @@ a {
     text-decoration: none;
 }
 
+.h2 {
+    color: #161616;
+    font-size: 48px;
+    font-weight: 300;
+}
 
 /***************        fonts       ****************/
-.font_1 {
+body {
     font-family: 'Roboto', sans-serif;
+}
+
+.font_2 {
+    font-family: 'logo', sans-serif;
 }
 
 /****************       nav         *****************/
 
 .cntBlock_nav {
     background-color: #333333;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 .nav_item {
     float: left;
-    padding: 20px 10px;
 }
 
 .nav_link {
     color: #c6cacc;
-
+    padding: 20px 10px;
     display: block;
     font-size: 12px;
     font-weight: 400;
 }
+.nav_link:hover, .nav_link:active {
+    background: #111111;
+}
 
-.nav_item:first-child{
+.nav_item:first-child {
     padding-left: 0;
 }
 
-.nav_item:last-child{
+.nav_item:last-child {
     padding-right: 0;
 }
 
@@ -131,87 +143,109 @@ a {
 
 .cntBlock_about {
     background-color: #ffffff;
+    margin-top: 52px;
 }
 
 .about_list {
     width: 100%;
-    display: table;
     padding: 8px 0;
 }
 
 .about_item {
-    padding: 10px;
-    width: 20%;
-    display: table-cell;
-    vertical-align: middle;
+    float: left;
 }
 
-.about_item:first-child{
-    padding-left: 0;
-}
-.about_item:last-child{
-    padding-right: 0;
+.about_item:last-child {
+    padding-top: 30px;
 }
 
-.about_item__time, .about_item__address, .about_item__phone{
-    padding-top: 0;
+.about_item:first-child {
+    margin-right: 30px;
 }
 
-.about_item__phone{
-    width: 26%;
+.logo-list_item {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.about_item__desc {
-    border-left: 1px solid #9a9a9a;
-    width: 14%;
+.logo-list_item__logo {
+    padding-right: 20px;
+    border-right: 1px solid #9a9a9a;
 }
 
-.about_icon{
-    display: inline-block;
-    vertical-align: top;
+.logo-list_item__desc {
+    padding-top: 40px;
+    padding-left: 10px;
 }
 
-.icon-logo{
-    width: 190px;
-    height: 86px;
-}
-
-.icon-clock, .icon-geo_linear, .icon-phone{
-    width: 30px;
-    height: 30px;
-}
-
-
-.about_content {
-    display: inline-block;
-}
-
-.about_desc {
+.logo-list_desc {
     color: #423d45;
     font-size: 12px;
     line-height: 16px;
 }
 
-.about_title{
+/*contacts_list*/
+
+.contacts_item__about {
+    margin-right: 20px;
+}
+
+.contacts_item__about {
+    float: left;
+}
+
+.contacts_item__time, .contacts_item__address, .contacts_item__phone {
+    padding-top: 0;
+}
+
+.contacts_icon {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.icon-logo {
+    width: 190px;
+    height: 86px;
+}
+
+.icon-clock, .icon-geo_linear, .icon-phone {
+    width: 30px;
+    height: 30px;
+}
+
+.contacts_content {
+    display: inline-block;
+}
+
+.contacts_title {
     margin-bottom: 5px;
 }
 
-.about_title, .about_title a {
+.contacts_title, .contacts_title a {
     color: #565656;
     font-size: 24px;
     line-height: 25px;
+}
+
+.contacts_desc {
+    /* Style for "Пн.-Пт.: с" */
+    color: #423d45;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
 }
 
 /**************   hero    ****************/
 
 .cntBlock_hero {
     background-color: #242b30;
-    min-width: 1060px;
 }
 
 .hero {
     padding: 82px 86px 72px;
     position: relative;
+    background: url("../img/hero_bg.png") fixed center no-repeat;
 }
 
 .hero_content {
@@ -238,16 +272,457 @@ a {
     margin-left: 5px;
 }
 
-.hero_bg, .hero_img {
+.hero_img {
     position: absolute;
-}
-
-.hero_bg {
-    top: 1px;
-    right: 200px;
 }
 
 .hero_img {
     bottom: -20px;
     right: 250px;
+}
+
+/***************    gallery    **************/
+
+.gallery {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.gallery_item img {
+    margin: 0 auto;
+}
+
+.gallery_item:focus {
+    outline: 0;
+}
+
+.slick-arrow {
+    font-size: 0;
+    line-height: 0;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    outline: 0;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+
+}
+
+.slick-prev {
+    background: url("../img/arrow_s_left.svg") no-repeat;
+    left: -15px;
+}
+
+.slick-next {
+    background: url("../img/arrow_s_right.svg") no-repeat;
+    right: -25px;
+}
+
+/**************     MAIN     ******************/
+
+/**************   discount   ******************/
+
+.cntBlock_discount {
+    background: linear-gradient(to right, #ff6700 50%, #ffa006 50%);
+}
+
+.discount_item {
+    float: left;
+    width: 33%;
+}
+
+.discount_item__1 {
+    background-color: #ff6700;
+    overflow: hidden;
+}
+
+.discount_item__2 {
+    background-color: #d13611;
+}
+
+.discount_item__3 {
+    background-color: #ffa006;
+}
+
+.discount_item-wrap {
+    padding: 30px 0 0 35px;
+    position: relative;
+    height: 275px;
+}
+
+.discount_item__1 .discount_item-wrap {
+    padding-left: 0;
+}
+
+.discount_title {
+    color: #f6f5f5;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.discount_title div:first-child {
+    margin-bottom: 5px;
+}
+
+.discount_title .font_2 {
+    font-size: 48px;
+}
+
+.discount_item__1 .discount_title div:nth-child(3), .discount_item__3 .discount_title div:nth-child(2) {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.discount_img__logo {
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    right: 10px;
+}
+
+.discount_percentage {
+    position: relative;
+    top: 35px;
+    left: 10px;
+    font-weight: 700;
+    font-size: 160px;
+    color: #ffe887;
+    -webkit-transform: rotate(22deg);
+    -moz-transform: rotate(22deg);
+    -ms-transform: rotate(22deg);
+    -o-transform: rotate(22deg);
+    transform: rotate(22deg);
+}
+
+.discount_percentage sup {
+    vertical-align: top;
+    font-size: 80px;
+}
+
+.discount_item-wrap__1 {
+    border-right: 1px dashed #ffffff;
+}
+
+.discount_item-wrap__2 {
+    background: url("../img/card_bg.png") -15px bottom no-repeat;
+    border-right: 1px dashed #ffffff;
+}
+
+.discount_item-wrap__3 {
+    background: url("../img/deliv_bg.png") -150px 80px no-repeat;
+}
+
+.scissors {
+    position: absolute;
+    top: 30px;
+    right: -2px;
+}
+
+/************    price    ************/
+
+.price {
+    width: 1240px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.price_header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.price_list {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.price_item {
+    position: relative;
+    width: 30%;
+    padding: 36px 0 0 40px;
+    color: #ffffff;
+    float: left;
+    height: 200px;
+}
+
+.price_item__left {
+    background-color: #242b30;
+}
+
+.price_item__middle {
+    background-color: #ff4953;
+    margin: 0 5%;
+}
+
+.price_item__right {
+    background-color: #5fa261;
+    margin-right: 0;
+}
+
+.price_price {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.price_currency {
+    font-weight: 400;
+}
+
+.price_desc {
+    font-size: 24px;
+}
+
+.price_icon .icon {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 18px;
+    right: 25px;
+}
+
+.button {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #dbdfe2;
+    padding: 20px 20px 20px 40px;
+    cursor: pointer;
+}
+
+.price_button {
+    margin: 0 auto;
+}
+
+.button img {
+    vertical-align: middle;
+    margin-left: 60px;
+}
+
+/***************   spare     *******************/
+
+.cntBlock_spare {
+    background-color: #f5f5f5;
+}
+
+.spare {
+    background: url("../img/tools_bg.png") no-repeat left bottom;
+    padding: 145px 30px 115px;
+    height: 500px;
+}
+
+.spare_content {
+    width: 50%;
+    float: right;
+    color: #161616;
+}
+
+.spare_header {
+    line-height: 72px;
+}
+
+.spare_desc {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+/**************     repair-check     ************/
+
+.cntBlock_repair-check {
+    background-color: #242b30;
+}
+
+.repair-check {
+    background: url("../img/repair-check_bg.png") no-repeat fixed center;
+
+}
+
+.repair-check_bg-container {
+    background: url("../img/repair_bg.png") no-repeat center 135px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.repair-check_content {
+    border: 2px dashed #ff6700;
+    background-color: rgba(36, 43, 48, 0.63);
+    padding: 12px;
+    width: 595px;
+    margin: 0 auto;
+}
+
+.repair-check_form-wrap {
+    background: #ffffff;
+    padding: 30px 50px;
+}
+
+.repair-check_header {
+    margin-bottom: 30px;
+}
+
+.repair-check_form label {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input__phone-wrap {
+    font-size: 24px;
+    font-weight: 400;
+    color: #b5b5b5;
+    padding: 20px 18px;
+    border: 1px solid #dbdfe2;
+    width: 455px;
+    margin-bottom: 13px;
+}
+
+#input__phone {
+    color: #000000;
+    border: none;
+    width: 300px;
+    font-size: 24px;
+    font-weight: 400;
+    outline: none;
+}
+
+.input-example {
+    font-size: 16px;
+    color: #b5b5b5;
+    font-weight: 400;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.input-example img {
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+.input-example span {
+    font-weight: 700;
+}
+
+.repair-check_button {
+    background-color: #ff6700;
+    color: #ffffff;
+}
+
+.repair-check_button img {
+    margin-left: 30px;
+}
+
+/*********************      map      **********************/
+
+.cntBlock_contacts {
+    position: relative;
+}
+
+.contacts {
+    width: 380px;
+    height: 340px;
+    position: absolute;
+    top: 65px;
+    left: 120px;
+    background-color: #ffffff;
+    padding: 45px;
+    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contacts_item {
+    margin-bottom: 20px;
+}
+
+.voyage {
+    position: absolute;
+    bottom: 70px;
+    right: -150px;
+}
+
+.voyage_arrow {
+    width: 40px;
+    height: 40px;
+    background-color: #ff6700;
+    box-shadow: 10px 10px 13px rgba(255, 103, 0, 0.55);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 24px;
+    left: -10px;
+}
+
+.voyage_content {
+    position: relative;
+    box-shadow: 0 10px 13px rgba(255, 103, 0, 0.55);
+    width: 195px;
+    padding: 8px;
+    background-color: #ff6700;
+}
+
+.voyage_desc {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #ffffff;
+    text-decoration-line: underline;
+    -moz-text-decoration-line: underline;
+    text-decoration-style: dashed;
+    -moz-text-decoration-style: dashed;
+    -webkit-text-decoration-style: dashed;
+    text-decoration-color: #f9f9f9;
+    -moz-text-decoration-color: #f9f9f9;
+    -webkit-text-decoration-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.cntBlock_contacts iframe {
+    display: block;
+    height: 470px;
+    width: 100%;
+}
+
+/*********************    FOOTER     **********************/
+
+.cntBlock_footer {
+    background-color: #f5f5f5;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #c8c8c8;
+}
+
+.copy {
+    float: left;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.social {
+    float: right;
+}
+
+.social_link .icon {
+    width: 30px;
+    height: 30px;
+    stroke-width: 0;
+    fill: #c8c8c8;
+}
+
+.social_link__tw, .social_link__vk {
+    margin-right: 8px;
 }
