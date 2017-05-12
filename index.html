@@ -19,10 +19,10 @@ Xiomi в Беларуси">
 
 <header>
     <!------------------------------        nav        ------------------------->
-
     <nav>
         <div class="cntBlock cntBlock_nav">
-            <div class="container nav">
+            <!----------------   desktop    ------------->
+            <div class="container nav nav__desktop">
                 <ul class="nav_list clearfix">
                     <li class="nav_item"><a href="#" class="nav_link">О нас</a></li>
                     <li class="nav_item"><a href="#" class="nav_link">Скидка</a></li>
@@ -31,6 +31,31 @@ Xiomi в Беларуси">
                     <li class="nav_item"><a href="#" class="nav_link">Проверка заказа</a></li>
                     <li class="nav_item"><a href="#" class="nav_link">Контакты</a></li>
                 </ul>
+            </div>
+            <!---------------    mobile    --------------->
+            <div class="container nav nav__mobile clearfix">
+                <div>
+                    <ul class="logo-list">
+                        <li class="logo-list_item logo-list_item__logo font_2">
+                            <img src="img/logo__tablet.png" alt="logo">
+                            <a href="#">
+                                <div><span>XI</span>STORE</div>
+                                <div>SERVICE</div>
+                            </a>
+                        </li>
+                        <li class="logo-list_item logo-list_item__desc">
+                            <div class="logo-list_desc">
+                                <div>Первый фирменный</div>
+                                <div>сервисный центр</div>
+                                <div>Xiomi в Беларуси</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="burger">
+                    <div></div>
+                    <span>Меню</span>
+                </div>
             </div>
         </div>
     </nav>
@@ -43,10 +68,12 @@ Xiomi в Беларуси">
                 <div class="about_list clearfix">
                     <div class="about_item">
                         <ul class="logo-list">
-                            <li class="logo-list_item logo-list_item__logo">
-                                <svg class="icon icon-logo">
-                                    <use xlink:href="img/symbol-defs.svg#icon-logo"></use>
-                                </svg>
+                            <li class="logo-list_item logo-list_item__logo font_2">
+                                <img src="img/logo__black.png" alt="logo">
+                                <a href="#">
+                                    <div><span>XI</span>STORE</div>
+                                    <div>SERVICE</div>
+                                </a>
                             </li>
                             <li class="logo-list_item logo-list_item__desc">
                                 <div class="logo-list_desc">
@@ -141,7 +168,9 @@ Xiomi в Беларуси">
                         </li>
                     </ul>
                 </div>
-                <img src="img/hero_img.png" alt="Сервисный ремонт Xiomi в Беларуси" class="hero_img">
+                <img src="img/hero_img.png" alt="Сервисный ремонт Xiomi в Беларуси" class="hero_img hero_img__desktop">
+                <!--tablet-->
+                <img src="img/hero_img__tablet.png" alt="Сервисный ремонт Xiomi в Беларуси" class="hero_img hero_img__tablet">
             </div>
         </div>
     </section>
@@ -152,11 +181,26 @@ Xiomi в Беларуси">
         <div class="cntBlock cntBlock_gallery">
             <div class="container gallery">
                 <div class="gallery_slider">
-                    <div class="gallery_item"><img src="img/slider_1.jpg" alt=""></div>
-                    <div class="gallery_item"><img src="img/slider_2.jpg" alt=""></div>
-                    <div class="gallery_item"><img src="img/slider_3.jpg" alt=""></div>
-                    <div class="gallery_item"><img src="img/slider_4.jpg" alt=""></div>
-                    <div class="gallery_item"><img src="img/slider_5.jpg" alt=""></div>
+                    <div class="gallery_item">
+                        <img src="img/slider_1.jpg" alt="" class="gallery_img gallery_img__desktop">
+                        <img src="img/slider_1__tablet.jpg" alt="" class="gallery_img gallery_img__tablet">
+                    </div>
+                    <div class="gallery_item">
+                        <img src="img/slider_2.jpg" alt="" class="gallery_img gallery_img__desktop">
+                        <img src="img/slider_2__tablet.jpg" alt="" class="gallery_img gallery_img__tablet">
+                    </div>
+                    <div class="gallery_item">
+                        <img src="img/slider_3.jpg" alt="" class="gallery_img gallery_img__desktop">
+                        <img src="img/slider_3__tablet.jpg" alt="" class="gallery_img gallery_img__tablet">
+                    </div>
+                    <div class="gallery_item">
+                        <img src="img/slider_4.jpg" alt="" class="gallery_img gallery_img__desktop">
+                        <img src="img/slider_4__tablet.jpg" alt="" class="gallery_img gallery_img__tablet">
+                    </div>
+                    <div class="gallery_item">
+                        <img src="img/slider_5.jpg" alt="" class="gallery_img gallery_img__desktop">
+                        <img src="img/slider_5__tablet.jpg" alt="" class="gallery_img gallery_img__tablet">
+                    </div>
                 </div>
             </div>
         </div>
@@ -168,6 +212,7 @@ Xiomi в Беларуси">
     <!-----------------------------          discount           -------------------------->
 
     <section>
+        <!--  desktop  -->
         <div class="cntBlock cntBlock_discount">
             <div class="container discount clearfix">
                 <div class="discount_item discount_item__1">
@@ -202,6 +247,39 @@ Xiomi в Беларуси">
                 </div>
             </div>
         </div>
+        <!--   mobile   -->
+        <div class="discount discount__mobile clearfix">
+            <div class="discount_item discount_item__1">
+                <div class="discount_item-wrap discount_item-wrap__1">
+                    <h3 class="discount_title">
+                        <div>Для клиентов магазина</div>
+                        <div class="font_2">xistore.by</div>
+                        <div>скидка 30%</div>
+                    </h3>
+                    <img src="img/scissors.png" alt="" class="scissors">
+                    <img src="img/logo.png" alt="" class="discount_img discount_img__logo">
+                    <div class="discount_percentage">
+                        -30<sup>%</sup>
+                    </div>
+                </div>
+            </div>
+            <div class="discount_item discount_item__2">
+                <div class="discount_item-wrap  discount_item-wrap__2">
+                    <h3 class="discount_title">
+                        <div title="Карта Халва">Плати картой</div>
+                    </h3>
+                    <img src="img/scissors.png" alt="" class="scissors">
+                </div>
+            </div>
+            <div class="discount_item discount_item__3">
+                <div class="discount_item-wrap  discount_item-wrap__3">
+                    <h3 class="discount_title">
+                        <div>Забираем и дотсавляем</div>
+                        <div>курьерами</div>
+                    </h3>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-----------------------------          price         --------------------------->
@@ -211,7 +289,7 @@ Xiomi в Беларуси">
             <div class="container price">
                 <h2 class="h2 price_header">Цена</h2>
                 <ul class="price_list clearfix">
-                    <li class="price_item price_item__left">
+                    <li class="price_item price_item__1">
                         <div class="price_icon">
                             <svg class="icon icon-search_phone">
                                 <use xlink:href="img/symbol-defs.svg#icon-search_phone"></use>
@@ -220,7 +298,7 @@ Xiomi в Беларуси">
                         <div class="price_price">10 <span class="price_currency">руб.</span></div>
                         <div class="price_desc">Диагностика</div>
                     </li>
-                    <li class="price_item  price_item__middle">
+                    <li class="price_item  price_item__2">
                         <div class="price_icon">
                             <svg class="icon icon-lock">
                                 <use xlink:href="img/symbol-defs.svg#icon-lock"></use>
@@ -232,7 +310,7 @@ Xiomi в Беларуси">
                             <div>(разблакировка)</div>
                         </div>
                     </li>
-                    <li class="price_item  price_item__right">
+                    <li class="price_item  price_item__3">
                         <div class="price_icon">
                             <svg class="icon icon-layers">
                                 <use xlink:href="img/symbol-defs.svg#icon-layers"></use>
