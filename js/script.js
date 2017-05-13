@@ -13,7 +13,7 @@ $(document).ready(function () {
         e.preventDefault();
         var target = this.hash;
         $target = $(target);
-        var top = $target.offset().top - 32;
+        var top = $target.offset().top - 86;
         $('html, body').stop().animate({
             'scrollTop':  top
         }, 900, 'swing', function () {
