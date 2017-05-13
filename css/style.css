@@ -623,7 +623,7 @@ body {
     margin-bottom: 13px;
 }
 
-#input__phone {
+.input__phone-wrap input {
     color: #000000;
     border: none;
     width: 300px;
@@ -727,11 +727,17 @@ body {
     cursor: pointer;
 }
 
-.cntBlock_contacts iframe {
+
+.map {
     display: block;
     height: 470px;
     width: 100%;
 }
+
+.map__mobile {
+    display: none;
+}
+
 
 /*********************    FOOTER     **********************/
 
@@ -800,6 +806,26 @@ body {
     .nav__mobile {
         display: block;
         padding: 10px;
+    }
+
+    .nav_list__mobile {
+        display: none;
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        top: 80px;
+    }
+
+    .nav_list__mobile .nav_item {
+        float: none;
+        display: block;
+        background: #333333;
+    }
+
+    .active {
+        display: block;
     }
 
     .logo-list_item {
@@ -1023,9 +1049,21 @@ body {
 
     /*************     nav    ************/
 
+    .nav__mobile {
+        width: 100%;
+    }
+
+    .cntBlock_nav {
+        -webkit-box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+    }
+
     .logo-list_item__desc {
         display: none;
     }
+
+
 
     /************     about    **********/
     .about_item {
@@ -1134,6 +1172,7 @@ body {
         background-size: 350px;
     }
 
+
     .discount_title {
         width: 300px;
         margin: 0 auto;
@@ -1144,6 +1183,10 @@ body {
         background-position: center bottom;
         -webkit-background-size: 350px;
         background-size: 350px;
+    }
+
+    .discount_item-wrap__3 .discount_title {
+        position: relative;
     }
 
     .scissors {
@@ -1161,8 +1204,8 @@ body {
     }
 
     .discount_item-wrap__3 .scissors__mobile {
-        left: 45px;
-        top: -16px;
+        left: 10px;
+        top: -36px;
     }
 
     /*************     price    **********/
@@ -1190,7 +1233,7 @@ body {
 
     .button {
         font-size: 18px;
-        padding: 20px;
+        padding: 10px;
         width: 100%;
     }
 
@@ -1209,7 +1252,8 @@ body {
     }
 
     .spare_content {
-        width: 100%;
+        width: 300px;
+        margin: 0 auto;
         text-align: center;
         float: none;
     }
@@ -1223,13 +1267,99 @@ body {
         display: inline-block;
     }
 
-    .spare_button {
-        padding: 10px;
-    }
-
     .spare_button img {
         margin-left: 10px;
     }
 
 
+    /**********        repair-check    *************/
+
+    .repair-check {
+        width: 100%;
+    }
+
+    .repair-check_bg-container {
+        background-position: center 35px;
+    }
+
+    .repair-check_content {
+        width: 300px;
+    }
+
+    .repair-check_form-wrap {
+        padding: 30px 20px;
+    }
+
+    .repair-check_header {
+        font-size: 30px;
+    }
+
+    .repair-check_form label {
+        font-size: 20px;
+    }
+
+    .input__phone-wrap {
+        width: 100%;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .input__phone-wrap input {
+        width: 150px;
+    }
+
+    .input-example {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    /*******   contacts + map   *******/
+
+    .map {
+        display: none;
+    }
+
+    .contacts_wrapper__mobile {
+        width: 100%;
+        position: relative;
+        -webkit-box-shadow: 0 10px 0 rgba(0, 0, 0, 0.08);
+        -moz-box-shadow: 0 10px 0 rgba(0, 0, 0, 0.08);
+        box-shadow: 0 10px 0 rgba(0, 0, 0, 0.08);
+    }
+
+
+    .contacts {
+        position: relative;
+        width: 320px;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .map__mobile {
+        display: block;
+    }
+
+    .voyage {
+        bottom: -80px;
+        right: 60px;
+    }
+
+    .voyage_arrow {
+        top: -10px;
+        left: 45px;
+    }
+
+    /**********   footer    ******/
+
+    .footer {
+        float: left;
+    }
+    
+    .social {
+        float: left;
+    }
 }

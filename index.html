@@ -56,6 +56,16 @@ Xiomi в Беларуси">
                     <div></div>
                     <span>Меню</span>
                 </div>
+                <div class="nav_list__mobile">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="#about" class="nav_link">О нас</a></li>
+                        <li class="nav_item"><a href="#discount" class="nav_link">Скидка</a></li>
+                        <li class="nav_item"><a href="#price" class="nav_link">Цена</a></li>
+                        <li class="nav_item"><a href="#spare" class="nav_link">Запчасти</a></li>
+                        <li class="nav_item"><a href="#repair-check" class="nav_link">Проверка заказа</a></li>
+                        <li class="nav_item"><a href="#contacts" class="nav_link">Контакты</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -63,7 +73,7 @@ Xiomi в Беларуси">
     <!------------------------------       about       -------------------------->
 
     <section>
-        <div class="cntBlock cntBlock_about">
+        <div class="cntBlock cntBlock_about" id="about">
             <div class="container about">
                 <div class="about_list clearfix">
                     <div class="about_item">
@@ -212,7 +222,10 @@ Xiomi в Беларуси">
     <!-----------------------------          discount           -------------------------->
 
     <section>
-        <!--  desktop  -->
+
+        <!------------------  desktop  ------------------>
+
+
         <div class="cntBlock cntBlock_discount">
             <div class="container discount clearfix">
                 <div class="discount_item discount_item__1">
@@ -248,8 +261,12 @@ Xiomi в Беларуси">
                 </div>
             </div>
         </div>
-        <!--   mobile   -->
-        <div class="discount discount__mobile clearfix">
+
+
+        <!---------------   mobile   ------------------->
+
+
+        <div class="discount discount__mobile clearfix"  id="discount">
             <div class="discount_item discount_item__1">
                 <div class="discount_item-wrap discount_item-wrap__1">
                     <h3 class="discount_title">
@@ -289,7 +306,7 @@ Xiomi в Беларуси">
     <!-----------------------------          price         --------------------------->
 
     <section>
-        <div class="cntBlock cntBlock_price">
+        <div class="cntBlock cntBlock_price" id="price">
             <div class="container price">
                 <h2 class="h2 price_header">Цена</h2>
                 <ul class="price_list clearfix">
@@ -336,7 +353,7 @@ Xiomi в Беларуси">
     <!---------------------------         spare          ----------------------------->
 
     <section>
-        <div class="cntBlock cntBlock_spare">
+        <div class="cntBlock cntBlock_spare" id="spare">
             <div class="container spare clearfix">
                 <div class="spare_content">
                     <h2 class="h2 spare_header">Запчасти</h2>
@@ -353,7 +370,7 @@ Xiomi в Беларуси">
     <!---------------------------      repair-check     ------------------------------>
 
     <section>
-        <div class="cntBlock cntBlock_repair-check">
+        <div class="cntBlock cntBlock_repair-check" id="repair-check">
             <div class="container repair-check">
                 <div class="repair-check_bg-container">
                     <div class="repair-check_content">
@@ -381,65 +398,68 @@ Xiomi в Беларуси">
 
     <!--------------------------       contacts        ---------------------------->
 
-    <section class="cntBlock cntBlock_contacts">
-        <div class="contacts">
-            <ul class="contacts_list">
-
-                <li class="contacts_item contacts_item__time">
-                    <div class="contacts_icon">
-                        <svg class="icon icon-clock">
-                            <use xlink:href="img/symbol-defs.svg#icon-clock"></use>
-                        </svg>
-                    </div>
-                    <div class="contacts_content">
-                        <div class="contacts_title">График работы</div>
-                        <div class="contacts_desc">
-                            <div>Пн.-Пт.: с 11 до 20</div>
-                            <div>Сб., Вс. выходной</div>
+    <section class="cntBlock cntBlock_contacts" id="contacts">
+        <div class="contacts_wrapper__mobile">
+            <div class="contacts">
+                <ul class="contacts_list">
+                    <li class="contacts_item contacts_item__time">
+                        <div class="contacts_icon">
+                            <svg class="icon icon-clock">
+                                <use xlink:href="img/symbol-defs.svg#icon-clock"></use>
+                            </svg>
                         </div>
+                        <div class="contacts_content">
+                            <div class="contacts_title">График работы</div>
+                            <div class="contacts_desc">
+                                <div>Пн.-Пт.: с 11 до 20</div>
+                                <div>Сб., Вс. выходной</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contacts_item contacts_item__phone">
+                        <div class="contacts_icon">
+                            <svg class="icon icon-phone">
+                                <use xlink:href="img/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                        <div class="contacts_content">
+                            <div class="contacts_title"><a href="tel:+375172902700">+375 17 290 27 00</a></div>
+                            <div class="contacts_title"><a href="tel:+375292000470">+375 29 200 04 70</a></div>
+                        </div>
+                    </li>
+                    </li>
+                    <li class="contacts_item contacts_item__address">
+                        <div class="contacts_icon">
+                            <svg class="icon icon-geo_linear">
+                                <use xlink:href="img/symbol-defs.svg#icon-geo_linear"></use>
+                            </svg>
+                        </div>
+                        <div class="contacts_content">
+                            <div class="contacts_title">
+                                <div>г. Минск,</div>
+                                <div>Чернышевского 10,</div>
+                                <div>офис 13 (1 этаж)</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="voyage clearfix">
+                    <div class="voyage_arrow"></div>
+                    <div class="voyage_content"><img src="img/3d_icon.png" alt="">
+                        <a class="voyage_desc">
+                            <div>Смотреть</div>
+                            <div>3D тур</div>
+                        </a>
                     </div>
 
-                </li>
-                <li class="contacts_item contacts_item__phone">
-                    <div class="contacts_icon">
-                        <svg class="icon icon-phone">
-                            <use xlink:href="img/symbol-defs.svg#icon-phone"></use>
-                        </svg>
-                    </div>
-                    <div class="contacts_content">
-                        <div class="contacts_title"><a href="tel:+375172902700">+375 17 290 27 00</a></div>
-                        <div class="contacts_title"><a href="tel:+375292000470">+375 29 200 04 70</a></div>
-                    </div>
-                </li>
-                </li>
-                <li class="contacts_item contacts_item__address">
-                    <div class="contacts_icon">
-                        <svg class="icon icon-geo_linear">
-                            <use xlink:href="img/symbol-defs.svg#icon-geo_linear"></use>
-                        </svg>
-                    </div>
-                    <div class="contacts_content">
-                        <div class="contacts_title">
-                            <div>г. Минск,</div>
-                            <div>Чернышевского 10,</div>
-                            <div>офис 13 (1 этаж)</div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="voyage clearfix">
-                <div class="voyage_arrow"></div>
-                <div class="voyage_content"><img src="img/3d_icon.png" alt="">
-                    <a class="voyage_desc">
-                        <div>Смотреть</div>
-                        <div>3D тур</div>
-                    </a>
                 </div>
-
             </div>
         </div>
+
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1174.614932120512!2d27.597504315639807!3d53.92765999444407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf0ef6faf4c7%3A0xc5d4ea80b970c1ad!2z0YPQuy4g0KfQtdGA0L3Ri9GI0LXQstGB0LrQvtCz0L4gMTAsINCc0LjQvdGB0LosINCR0LXQu9Cw0YDRg9GB0Yw!5e0!3m2!1sru!2sru!4v1494262391864"
-                frameborder="0" style="border:0" allowfullscreen></iframe>
+                frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1174.614932120512!2d27.597504315639807!3d53.92765999444407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf0ef6faf4c7%3A0xc5d4ea80b970c1ad!2z0YPQuy4g0KfQtdGA0L3Ri9GI0LXQstGB0LrQvtCz0L4gMTAsINCc0LjQvdGB0LosINCR0LXQu9Cw0YDRg9GB0Yw!5e0!3m2!1sru!2sru!4v1494262391864"
+                frameborder="0" style="border:0" allowfullscreen class="map map__mobile"></iframe>
     </section>
 
 </main>
@@ -449,7 +469,6 @@ Xiomi в Беларуси">
 <footer>
     <div class="cntBlock cntBlock_footer">
         <div class="container footer clearfix">
-            <div class="copy">2014-2017 ООО «Новый символ»</div>
             <div class="social">
                 <a href="#" class="social_link social_link__fb">
                     <svg class="icon icon-facebook">
@@ -472,6 +491,7 @@ Xiomi в Беларуси">
                     </svg>
                 </a>
             </div>
+            <div class="copy">2014-2017 ООО «Новый символ»</div>
         </div>
     </div>
 </footer>

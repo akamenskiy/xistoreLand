@@ -1,7 +1,27 @@
 /**
  * Created by sashka on 06.05.17.
  */
+
 $(document).ready(function () {
+
+    $(".burger").click(function () {
+        $(".nav_list__mobile").toggleClass("active");
+    });
+
+
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash;
+        $target = $(target);
+        var top = $target.offset().top - 32;
+        $('html, body').stop().animate({
+            'scrollTop':  top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+        $(".nav_list__mobile").removeClass("active");
+    });
+
 
     $('.contacts_list__about').slick({
         mobileFirst: true,
