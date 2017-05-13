@@ -378,7 +378,7 @@ body {
     height: 275px;
 }
 
-.discount_item__1 .discount_item-wrap {
+.discount_item-wrap__1 {
     padding-left: 0;
 }
 
@@ -401,7 +401,11 @@ body {
     font-weight: 700;
 }
 
-.discount_img__logo {
+.discount_img__mobile {
+    display: none;
+}
+
+.discount_img {
     position: absolute;
     z-index: 1;
     top: 60px;
@@ -444,6 +448,10 @@ body {
     position: absolute;
     top: 30px;
     right: -2px;
+}
+
+.scissors__mobile {
+    display: none;
 }
 
 /************    price    ************/
@@ -548,6 +556,10 @@ body {
     color: #161616;
 }
 
+.spare_img__mobile {
+    display: none;
+}
+
 .spare_header {
     line-height: 72px;
 }
@@ -646,7 +658,7 @@ body {
     margin-left: 30px;
 }
 
-/*********************      map      **********************/
+/*********************      contacts + map      **********************/
 
 .cntBlock_contacts {
     position: relative;
@@ -755,7 +767,14 @@ body {
 }
 
 
+
+
+
+
+
+/********************************************************************/
 /*************              TABLET             *********************/
+/******************************************************************/
 
 
 @media (max-width: 1259px) {
@@ -902,7 +921,7 @@ body {
         height: 216px;
     }
 
-    .discount_img__logo {
+    .discount_img {
         top: 20px;
         right: 50px;
     }
@@ -956,13 +975,19 @@ body {
         font-size: 18px;
     }
 
-    .spare .button {
-        font-size: 20px;
+    .spare_button {
+        font-size: 18px;
         padding: 10px;
     }
 
-    .spare .button img {
-        margin-left: 30px;
+    .spare_button img {
+        margin-left: 20px;
+    }
+
+    /********    repair-check    ******/
+
+    .repair-check {
+        width: 100%;
     }
 
     /********    contacts    ********/
@@ -974,5 +999,237 @@ body {
         left: 10px;
         padding: 30px;
     }
+
+}
+
+
+/********************************************************************/
+/*************              MOBILE             *********************/
+/******************************************************************/
+
+
+@media (max-width: 731px) {
+    /***************    General CSS    ***************/
+
+    .cntBlock {
+        min-width: 320px;
+    }
+    .container {
+        width: 320px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /*************     nav    ************/
+
+    .logo-list_item__desc {
+        display: none;
+    }
+
+    /************     about    **********/
+    .about_item {
+        float: none;
+        padding: 0;
+    }
+
+    .about_item:last-child {
+        padding-top: 0;
+    }
+
+    .contacts_item__about {
+        margin: 0;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .contacts_item__about .contacts_content {
+        text-align: left;
+    }
+
+
+    .slick-prev {
+        left: 0;
+    }
+
+    .slick-next {
+        right: -10px;
+    }
+
+    /***********    hero     ***********/
+    .cntBlock_hero {
+        overflow: hidden;
+    }
+
+    .hero {
+        max-width: 500px;
+    }
+    .hero_content {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .hero_title {
+        font-size: 30px;
+    }
+
+    .features_item span {
+        font-size: 24px;
+    }
+
+    .hero_img__tablet {
+        right: -264px;
+    }
+
+    /**********    discount   *********/
+
+    .discount_img__desktop {
+        display: none;
+    }
+
+    .discount_img__mobile {
+        display: block;
+        top: 50px;
+        right: 0;
+    }
+
+    .discount_item {
+        width: 100%;
+    }
+
+    .discount_item-wrap {
+        width: 320px;
+        height: 220px;
+        padding: 20px 10px 35px;
+    }
+
+    .discount_title {
+        font-size: 20px;
+    }
+
+    .discount_title .font_2,
+    .discount_item__1 .discount_title div:nth-child(3),
+    .discount_item__3 .discount_title div:nth-child(2){
+        font-size: 30px;
+    }
+
+    .discount_percentage {
+        left: 0;
+    }
+
+    .discount_item__2 {
+        border-bottom:1px dashed #ffffff;
+    }
+
+    .discount_item-wrap__2, .discount_item-wrap__3 {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .discount_item-wrap__2 {
+        width: 100%;
+        border-right:none;
+        background-position: center bottom;
+        -webkit-background-size: 350px;
+        background-size: 350px;
+    }
+
+    .discount_title {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .discount_item-wrap__3 {
+        width: 100%;
+        background-position: center bottom;
+        -webkit-background-size: 350px;
+        background-size: 350px;
+    }
+
+    .scissors {
+        display: none;
+    }
+
+    .scissors__mobile {
+        display: inline-block;
+        position: absolute;
+    }
+
+    .discount_item-wrap__1 .scissors__mobile {
+        left: 20px;
+        bottom: -2px;
+    }
+
+    .discount_item-wrap__3 .scissors__mobile {
+        left: 45px;
+        top: -16px;
+    }
+
+    /*************     price    **********/
+
+    .price_item {
+        width: 100%;
+        height: 150px;
+    }
+
+    .price_item__1 {
+        margin-bottom: 10px;
+    }
+
+    .price_item__2 {
+        margin: 0;
+    }
+
+    .price_price {
+        font-size: 30px;
+    }
+
+    .price_desc {
+        font-size: 20px;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .button img {
+        margin-left: 20px;
+    }
+
+
+    /************    spare    **********/
+
+    .spare {
+        background: none;
+        width: 100%;
+        padding: 30px 0;
+        height: 100%;
+    }
+
+    .spare_content {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    .spare_desc {
+        width: 300px;
+        margin: 0 auto 20px;
+    }
+
+    .spare_img__mobile {
+        display: inline-block;
+    }
+
+    .spare_button {
+        padding: 10px;
+    }
+
+    .spare_button img {
+        margin-left: 10px;
+    }
+
 
 }
