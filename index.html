@@ -19,18 +19,53 @@ Xiomi в Беларуси">
 
 <header>
     <!------------------------------        nav        ------------------------->
-
     <nav>
         <div class="cntBlock cntBlock_nav">
-            <div class="container nav">
+            <!----------------   desktop    ------------->
+            <div class="container nav nav__desktop">
                 <ul class="nav_list clearfix">
-                    <li class="nav_item"><a href="#" class="nav_link">О нас</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Скидка</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Цена</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Запчасти</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Проверка заказа</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Контакты</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">О нас</a></li>
+                    <li class="nav_item"><a href="#discount__desk" class="nav_link">Скидка</a></li>
+                    <li class="nav_item"><a href="#price" class="nav_link">Цена</a></li>
+                    <li class="nav_item"><a href="#spare" class="nav_link">Запчасти</a></li>
+                    <li class="nav_item"><a href="#repair-check" class="nav_link">Проверка заказа</a></li>
+                    <li class="nav_item"><a href="#contacts" class="nav_link">Контакты</a></li>
                 </ul>
+            </div>
+            <!---------------    mobile    --------------->
+            <div class="container nav nav__mobile clearfix">
+                <div>
+                    <ul class="logo-list">
+                        <li class="logo-list_item logo-list_item__logo font_2">
+                            <img src="img/logo__tablet.png" alt="logo">
+                            <a href="#">
+                                <div><span>XI</span>STORE</div>
+                                <div>SERVICE</div>
+                            </a>
+                        </li>
+                        <li class="logo-list_item logo-list_item__desc">
+                            <div class="logo-list_desc">
+                                <div>Первый фирменный</div>
+                                <div>сервисный центр</div>
+                                <div>Xiomi в Беларуси</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="burger">
+                    <div></div>
+                    <span>Меню</span>
+                </div>
+                <div class="nav_list__mobile">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="#about" class="nav_link">О нас</a></li>
+                        <li class="nav_item"><a href="#discount" class="nav_link">Скидка</a></li>
+                        <li class="nav_item"><a href="#price" class="nav_link">Цена</a></li>
+                        <li class="nav_item"><a href="#spare" class="nav_link">Запчасти</a></li>
+                        <li class="nav_item"><a href="#repair-check" class="nav_link">Проверка заказа</a></li>
+                        <li class="nav_item"><a href="#contacts" class="nav_link">Контакты</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -38,15 +73,17 @@ Xiomi в Беларуси">
     <!------------------------------       about       -------------------------->
 
     <section>
-        <div class="cntBlock cntBlock_about">
+        <div class="cntBlock cntBlock_about" id="about">
             <div class="container about">
                 <div class="about_list clearfix">
                     <div class="about_item">
                         <ul class="logo-list">
-                            <li class="logo-list_item logo-list_item__logo">
-                                <svg class="icon icon-logo">
-                                    <use xlink:href="img/symbol-defs.svg#icon-logo"></use>
-                                </svg>
+                            <li class="logo-list_item logo-list_item__logo font_2">
+                                <img src="img/logo__black.png" alt="logo">
+                                <a href="#">
+                                    <div><span>XI</span>STORE</div>
+                                    <div>SERVICE</div>
+                                </a>
                             </li>
                             <li class="logo-list_item logo-list_item__desc">
                                 <div class="logo-list_desc">
@@ -141,7 +178,9 @@ Xiomi в Беларуси">
                         </li>
                     </ul>
                 </div>
-                <img src="img/hero_img.png" alt="Сервисный ремонт Xiomi в Беларуси" class="hero_img">
+                <img src="img/hero_img.png" alt="Сервисный ремонт Xiomi в Беларуси" class="hero_img hero_img__desktop">
+                <!--tablet-->
+                <img src="img/hero_img__tablet.png" alt="Сервисный ремонт Xiomi в Беларуси" class="hero_img hero_img__tablet">
             </div>
         </div>
     </section>
@@ -152,11 +191,26 @@ Xiomi в Беларуси">
         <div class="cntBlock cntBlock_gallery">
             <div class="container gallery">
                 <div class="gallery_slider">
-                    <div class="gallery_item"><img src="img/slider_1.jpg" alt=""></div>
-                    <div class="gallery_item"><img src="img/slider_2.jpg" alt=""></div>
-                    <div class="gallery_item"><img src="img/slider_3.jpg" alt=""></div>
-                    <div class="gallery_item"><img src="img/slider_4.jpg" alt=""></div>
-                    <div class="gallery_item"><img src="img/slider_5.jpg" alt=""></div>
+                    <div class="gallery_item">
+                        <img src="img/slider_1.jpg" alt="" class="gallery_img gallery_img__desktop">
+                        <img src="img/slider_1__tablet.jpg" alt="" class="gallery_img gallery_img__tablet">
+                    </div>
+                    <div class="gallery_item">
+                        <img src="img/slider_2.jpg" alt="" class="gallery_img gallery_img__desktop">
+                        <img src="img/slider_2__tablet.jpg" alt="" class="gallery_img gallery_img__tablet">
+                    </div>
+                    <div class="gallery_item">
+                        <img src="img/slider_3.jpg" alt="" class="gallery_img gallery_img__desktop">
+                        <img src="img/slider_3__tablet.jpg" alt="" class="gallery_img gallery_img__tablet">
+                    </div>
+                    <div class="gallery_item">
+                        <img src="img/slider_4.jpg" alt="" class="gallery_img gallery_img__desktop">
+                        <img src="img/slider_4__tablet.jpg" alt="" class="gallery_img gallery_img__tablet">
+                    </div>
+                    <div class="gallery_item">
+                        <img src="img/slider_5.jpg" alt="" class="gallery_img gallery_img__desktop">
+                        <img src="img/slider_5__tablet.jpg" alt="" class="gallery_img gallery_img__tablet">
+                    </div>
                 </div>
             </div>
         </div>
@@ -168,8 +222,12 @@ Xiomi в Беларуси">
     <!-----------------------------          discount           -------------------------->
 
     <section>
+
+        <!------------------  desktop  ------------------>
+
+
         <div class="cntBlock cntBlock_discount">
-            <div class="container discount clearfix">
+            <div class="container discount clearfix" id="discount__desk">
                 <div class="discount_item discount_item__1">
                     <div class="discount_item-wrap discount_item-wrap__1">
                         <h3 class="discount_title">
@@ -178,7 +236,8 @@ Xiomi в Беларуси">
                             <div>скидка 30%</div>
                         </h3>
                         <img src="img/scissors.png" alt="" class="scissors">
-                        <img src="img/logo.png" alt="" class="discount_img discount_img__logo">
+                        <img src="img/logo.png" alt="" class="discount_img discount_img__desktop">
+                        <img src="img/logo__mobile.png" alt="" class="discount_img discount_img__mobile">
                         <div class="discount_percentage">
                             -30<sup>%</sup>
                         </div>
@@ -202,16 +261,56 @@ Xiomi в Беларуси">
                 </div>
             </div>
         </div>
+
+
+        <!---------------   mobile   ------------------->
+
+
+        <div class="discount discount__mobile clearfix"  id="discount">
+            <div class="discount_item discount_item__1">
+                <div class="discount_item-wrap discount_item-wrap__1">
+                    <h3 class="discount_title">
+                        <div>Для клиентов магазина</div>
+                        <div class="font_2">xistore.by</div>
+                        <div>скидка 30%</div>
+                    </h3>
+                    <img src="img/scissors.png" alt="" class="scissors">
+                    <img src="img/scissors_mobile.png" alt="" class="scissors__mobile">
+                    <img src="img/logo.png" alt="" class="discount_img discount_img__desktop">
+                    <img src="img/logo__mobile.png" alt="" class="discount_img discount_img__mobile">
+                    <div class="discount_percentage">
+                        -30<sup>%</sup>
+                    </div>
+                </div>
+            </div>
+            <div class="discount_item discount_item__2">
+                <div class="discount_item-wrap  discount_item-wrap__2">
+                    <h3 class="discount_title">
+                        <div title="Карта Халва">Плати картой</div>
+                    </h3>
+                    <img src="img/scissors.png" alt="" class="scissors">
+                </div>
+            </div>
+            <div class="discount_item discount_item__3">
+                <div class="discount_item-wrap  discount_item-wrap__3">
+                    <h3 class="discount_title">
+                        <div>Забираем и дотсавляем</div>
+                        <div>курьерами</div>
+                        <img src="img/scissors_mobile.png" alt="" class="scissors__mobile">
+                    </h3>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-----------------------------          price         --------------------------->
 
     <section>
-        <div class="cntBlock cntBlock_price">
+        <div class="cntBlock cntBlock_price" id="price">
             <div class="container price">
                 <h2 class="h2 price_header">Цена</h2>
                 <ul class="price_list clearfix">
-                    <li class="price_item price_item__left">
+                    <li class="price_item price_item__1">
                         <div class="price_icon">
                             <svg class="icon icon-search_phone">
                                 <use xlink:href="img/symbol-defs.svg#icon-search_phone"></use>
@@ -220,7 +319,7 @@ Xiomi в Беларуси">
                         <div class="price_price">10 <span class="price_currency">руб.</span></div>
                         <div class="price_desc">Диагностика</div>
                     </li>
-                    <li class="price_item  price_item__middle">
+                    <li class="price_item  price_item__2">
                         <div class="price_icon">
                             <svg class="icon icon-lock">
                                 <use xlink:href="img/symbol-defs.svg#icon-lock"></use>
@@ -232,7 +331,7 @@ Xiomi в Беларуси">
                             <div>(разблакировка)</div>
                         </div>
                     </li>
-                    <li class="price_item  price_item__right">
+                    <li class="price_item  price_item__3">
                         <div class="price_icon">
                             <svg class="icon icon-layers">
                                 <use xlink:href="img/symbol-defs.svg#icon-layers"></use>
@@ -254,10 +353,11 @@ Xiomi в Беларуси">
     <!---------------------------         spare          ----------------------------->
 
     <section>
-        <div class="cntBlock cntBlock_spare">
+        <div class="cntBlock cntBlock_spare" id="spare">
             <div class="container spare clearfix">
                 <div class="spare_content">
                     <h2 class="h2 spare_header">Запчасти</h2>
+                    <img src="img/spare_img.png" alt="" class="spare_img__mobile">
                     <p class="spare_desc">Тачскрины Xiaomi, Meizu (сенсорные экраны) и дисплеи, модули (тач+дисплей в
                         сборе), аккумуляторы, задние крышки, динамики.</p>
                     <button class="button spare_button">Смотреть список запчастей <img
@@ -270,7 +370,7 @@ Xiomi в Беларуси">
     <!---------------------------      repair-check     ------------------------------>
 
     <section>
-        <div class="cntBlock cntBlock_repair-check">
+        <div class="cntBlock cntBlock_repair-check" id="repair-check">
             <div class="container repair-check">
                 <div class="repair-check_bg-container">
                     <div class="repair-check_content">
@@ -298,65 +398,68 @@ Xiomi в Беларуси">
 
     <!--------------------------       contacts        ---------------------------->
 
-    <section class="cntBlock cntBlock_contacts">
-        <div class="contacts">
-            <ul class="contacts_list">
-
-                <li class="contacts_item contacts_item__time">
-                    <div class="contacts_icon">
-                        <svg class="icon icon-clock">
-                            <use xlink:href="img/symbol-defs.svg#icon-clock"></use>
-                        </svg>
-                    </div>
-                    <div class="contacts_content">
-                        <div class="contacts_title">График работы</div>
-                        <div class="contacts_desc">
-                            <div>Пн.-Пт.: с 11 до 20</div>
-                            <div>Сб., Вс. выходной</div>
+    <section class="cntBlock cntBlock_contacts" id="contacts">
+        <div class="contacts_wrapper__mobile">
+            <div class="contacts">
+                <ul class="contacts_list">
+                    <li class="contacts_item contacts_item__time">
+                        <div class="contacts_icon">
+                            <svg class="icon icon-clock">
+                                <use xlink:href="img/symbol-defs.svg#icon-clock"></use>
+                            </svg>
                         </div>
+                        <div class="contacts_content">
+                            <div class="contacts_title">График работы</div>
+                            <div class="contacts_desc">
+                                <div>Пн.-Пт.: с 11 до 20</div>
+                                <div>Сб., Вс. выходной</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contacts_item contacts_item__phone">
+                        <div class="contacts_icon">
+                            <svg class="icon icon-phone">
+                                <use xlink:href="img/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                        <div class="contacts_content">
+                            <div class="contacts_title"><a href="tel:+375172902700">+375 17 290 27 00</a></div>
+                            <div class="contacts_title"><a href="tel:+375292000470">+375 29 200 04 70</a></div>
+                        </div>
+                    </li>
+                    </li>
+                    <li class="contacts_item contacts_item__address">
+                        <div class="contacts_icon">
+                            <svg class="icon icon-geo_linear">
+                                <use xlink:href="img/symbol-defs.svg#icon-geo_linear"></use>
+                            </svg>
+                        </div>
+                        <div class="contacts_content">
+                            <div class="contacts_title">
+                                <div>г. Минск,</div>
+                                <div>Чернышевского 10,</div>
+                                <div>офис 13 (1 этаж)</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="voyage clearfix">
+                    <div class="voyage_arrow"></div>
+                    <div class="voyage_content"><img src="img/3d_icon.png" alt="">
+                        <a class="voyage_desc">
+                            <div>Смотреть</div>
+                            <div>3D тур</div>
+                        </a>
                     </div>
 
-                </li>
-                <li class="contacts_item contacts_item__phone">
-                    <div class="contacts_icon">
-                        <svg class="icon icon-phone">
-                            <use xlink:href="img/symbol-defs.svg#icon-phone"></use>
-                        </svg>
-                    </div>
-                    <div class="contacts_content">
-                        <div class="contacts_title"><a href="tel:+375172902700">+375 17 290 27 00</a></div>
-                        <div class="contacts_title"><a href="tel:+375292000470">+375 29 200 04 70</a></div>
-                    </div>
-                </li>
-                </li>
-                <li class="contacts_item contacts_item__address">
-                    <div class="contacts_icon">
-                        <svg class="icon icon-geo_linear">
-                            <use xlink:href="img/symbol-defs.svg#icon-geo_linear"></use>
-                        </svg>
-                    </div>
-                    <div class="contacts_content">
-                        <div class="contacts_title">
-                            <div>г. Минск,</div>
-                            <div>Чернышевского 10,</div>
-                            <div>офис 13 (1 этаж)</div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="voyage clearfix">
-                <div class="voyage_arrow"></div>
-                <div class="voyage_content"><img src="img/3d_icon.png" alt="">
-                    <a class="voyage_desc">
-                        <div>Смотреть</div>
-                        <div>3D тур</div>
-                    </a>
                 </div>
-
             </div>
         </div>
+
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1174.614932120512!2d27.597504315639807!3d53.92765999444407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf0ef6faf4c7%3A0xc5d4ea80b970c1ad!2z0YPQuy4g0KfQtdGA0L3Ri9GI0LXQstGB0LrQvtCz0L4gMTAsINCc0LjQvdGB0LosINCR0LXQu9Cw0YDRg9GB0Yw!5e0!3m2!1sru!2sru!4v1494262391864"
-                frameborder="0" style="border:0" allowfullscreen></iframe>
+                frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1174.614932120512!2d27.597504315639807!3d53.92765999444407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf0ef6faf4c7%3A0xc5d4ea80b970c1ad!2z0YPQuy4g0KfQtdGA0L3Ri9GI0LXQstGB0LrQvtCz0L4gMTAsINCc0LjQvdGB0LosINCR0LXQu9Cw0YDRg9GB0Yw!5e0!3m2!1sru!2sru!4v1494262391864"
+                frameborder="0" style="border:0" allowfullscreen class="map map__mobile"></iframe>
     </section>
 
 </main>
@@ -366,7 +469,6 @@ Xiomi в Беларуси">
 <footer>
     <div class="cntBlock cntBlock_footer">
         <div class="container footer clearfix">
-            <div class="copy">2014-2017 ООО «Новый символ»</div>
             <div class="social">
                 <a href="#" class="social_link social_link__fb">
                     <svg class="icon icon-facebook">
@@ -389,6 +491,7 @@ Xiomi в Беларуси">
                     </svg>
                 </a>
             </div>
+            <div class="copy">2014-2017 ООО «Новый символ»</div>
         </div>
     </div>
 </footer>
