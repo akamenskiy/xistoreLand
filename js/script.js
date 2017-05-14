@@ -4,23 +4,30 @@
 
 $(document).ready(function () {
 
+    /******     burger    ******/
+
     $(".burger").click(function () {
         $(".nav_list__mobile").toggleClass("active");
     });
+
+
+    /******     scrollTo     ******/
 
 
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
         var target = this.hash;
         $target = $(target);
-        var top = $target.offset().top - 86;
         $('html, body').stop().animate({
-            'scrollTop':  top
+            'scrollTop':  $target.offset().top - $('.nav').height()
         }, 900, 'swing', function () {
             window.location.hash = target;
         });
         $(".nav_list__mobile").removeClass("active");
     });
+
+
+    /********     slider      *********/
 
 
     $('.contacts_list__about').slick({
