@@ -131,6 +131,7 @@ body {
     font-size: 12px;
     font-weight: 400;
 }
+
 .nav_link:hover, .nav_link:active {
     background: #111111;
 }
@@ -538,15 +539,15 @@ body {
 .button:active {
     top: 1px;
     outline: none;
-    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.5) inset,
-    0 2px 3px rgba(0,0,0,.5) inset,
-    0 1px 1px rgba(255,255,255,.1);
-    -moz-box-shadow: 0 0 1px rgba(0,0,0,.5) inset,
-    0 2px 3px rgba(0,0,0,.5) inset,
-    0 1px 1px rgba(255,255,255,.1);
-    box-shadow: 0 0 1px rgba(0,0,0,.5) inset,
-    0 2px 3px rgba(0,0,0,.5) inset,
-    0 1px 1px rgba(255,255,255,.1);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .5) inset,
+    0 2px 3px rgba(0, 0, 0, .5) inset,
+    0 1px 1px rgba(255, 255, 255, .1);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .5) inset,
+    0 2px 3px rgba(0, 0, 0, .5) inset,
+    0 1px 1px rgba(255, 255, 255, .1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5) inset,
+    0 2px 3px rgba(0, 0, 0, .5) inset,
+    0 1px 1px rgba(255, 255, 255, .1);
 }
 
 .price_button {
@@ -747,7 +748,6 @@ body {
     cursor: pointer;
 }
 
-
 .map {
     display: block;
     height: 470px;
@@ -757,7 +757,6 @@ body {
 .map__mobile {
     display: none;
 }
-
 
 /*********************    FOOTER     **********************/
 
@@ -792,24 +791,17 @@ body {
     margin-right: 8px;
 }
 
-
-
-
-
-
-
 /********************************************************************/
 /*************              TABLET             *********************/
 /******************************************************************/
 
-
 @media (max-width: 1259px) {
 
     /***************    General CSS    ***************/
-
     .cntBlock {
         min-width: 732px;
     }
+
     .container {
         width: 712px;
         margin: 0 auto;
@@ -818,7 +810,6 @@ body {
     }
 
     /*************     nav    ************/
-
     .nav__desktop {
         display: none;
     }
@@ -872,7 +863,7 @@ body {
         line-height: 22px;
     }
 
-    .burger div{
+    .burger div {
         top: 23px;
     }
 
@@ -888,18 +879,18 @@ body {
         top: -5px;
         content: '';
     }
+
     .burger div:after {
         top: -19px;
         content: '';
     }
 
     /*************     about    ***********/
-
     .cntBlock_about {
         margin-top: 85px;
     }
 
-    .about_item:first-child{
+    .about_item:first-child {
         display: none;
     }
 
@@ -922,8 +913,7 @@ body {
     }
 
     /**********      hero     ********/
-
-    .hero_img__desktop{
+    .hero_img__desktop {
         display: none;
     }
 
@@ -934,7 +924,6 @@ body {
     }
 
     /*********     gallery      *******/
-
     .gallery_item .gallery_img__desktop {
         display: none;
     }
@@ -944,7 +933,6 @@ body {
     }
 
     /*********     discount     *******/
-
     .cntBlock_discount {
         display: none;
     }
@@ -957,7 +945,7 @@ body {
     .discount_item__1 {
         width: 100%;
         background: #ff6700;
-        border-bottom:1px dashed #ffffff;
+        border-bottom: 1px dashed #ffffff;
     }
 
     .discount_item-wrap__1 {
@@ -995,7 +983,6 @@ body {
     }
 
     /*******   price   *******/
-
     .price_item {
         width: 48%;
     }
@@ -1009,7 +996,6 @@ body {
     }
 
     /*******    spare   *******/
-
     .spare {
         padding-top: 30px;
         -webkit-background-size: 490px;
@@ -1031,13 +1017,11 @@ body {
     }
 
     /********    repair-check    ******/
-
     .repair-check {
         width: 100%;
     }
 
     /********    contacts    ********/
-
     .contacts {
         width: 300px;
         height: 315px;
@@ -1048,18 +1032,16 @@ body {
 
 }
 
-
 /********************************************************************/
 /*************              MOBILE             *********************/
 /******************************************************************/
 
-
 @media (max-width: 731px) {
     /***************    General CSS    ***************/
-
     .cntBlock {
         min-width: 320px;
     }
+
     .container {
         width: 320px;
         margin: 0 auto;
@@ -1068,7 +1050,6 @@ body {
     }
 
     /*************     nav    ************/
-
     .nav__mobile {
         width: 100%;
     }
@@ -1082,8 +1063,6 @@ body {
     .logo-list_item__desc {
         display: none;
     }
-
-
 
     /************     about    **********/
     .about_item {
@@ -1105,7 +1084,6 @@ body {
         text-align: left;
     }
 
-
     .slick-prev {
         left: 0;
     }
@@ -1122,6 +1100,7 @@ body {
     .hero {
         max-width: 500px;
     }
+
     .hero_content {
         width: 320px;
         margin: 0 auto;
@@ -1140,7 +1119,6 @@ body {
     }
 
     /**********    discount   *********/
-
     .discount_img__desktop {
         display: none;
     }
@@ -1167,7 +1145,7 @@ body {
 
     .discount_title .font_2,
     .discount_item__1 .discount_title div:nth-child(3),
-    .discount_item__3 .discount_title div:nth-child(2){
+    .discount_item__3 .discount_title div:nth-child(2) {
         font-size: 30px;
     }
 
@@ -1176,7 +1154,7 @@ body {
     }
 
     .discount_item__2 {
-        border-bottom:1px dashed #ffffff;
+        border-bottom: 1px dashed #ffffff;
     }
 
     .discount_item-wrap__2, .discount_item-wrap__3 {
@@ -1186,12 +1164,11 @@ body {
 
     .discount_item-wrap__2 {
         width: 100%;
-        border-right:none;
+        border-right: none;
         background-position: center bottom;
         -webkit-background-size: 350px;
         background-size: 350px;
     }
-
 
     .discount_title {
         width: 300px;
@@ -1229,7 +1206,6 @@ body {
     }
 
     /*************     price    **********/
-
     .price_item {
         width: 100%;
         height: 150px;
@@ -1261,9 +1237,7 @@ body {
         margin-left: 20px;
     }
 
-
     /************    spare    **********/
-
     .spare {
         background: none;
         width: 100%;
@@ -1291,9 +1265,7 @@ body {
         margin-left: 5px;
     }
 
-
     /**********        repair-check    *************/
-
     .repair-check {
         width: 100%;
     }
@@ -1334,7 +1306,6 @@ body {
     }
 
     /*******   contacts + map   *******/
-
     .map {
         display: none;
     }
@@ -1346,7 +1317,6 @@ body {
         -moz-box-shadow: 0 10px 0 rgba(0, 0, 0, 0.08);
         box-shadow: 0 10px 0 rgba(0, 0, 0, 0.08);
     }
-
 
     .contacts {
         position: relative;
@@ -1374,11 +1344,10 @@ body {
     }
 
     /**********   footer    ******/
-
     .footer {
         float: left;
     }
-    
+
     .social {
         float: left;
     }
