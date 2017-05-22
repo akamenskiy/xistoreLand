@@ -118,6 +118,9 @@ body {
     position: fixed;
     top: 0;
     z-index: 2;
+    -webkit-box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
 }
 
 .nav_item {
@@ -177,18 +180,6 @@ body {
 .logo-list_item__logo {
     padding-right: 20px;
     border-right: 1px solid #9a9a9a;
-}
-
-.logo-list_item__logo a {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 38px;
-    color: #404144;
-    vertical-align: bottom;
-}
-
-.logo-list_item__logo span {
-    color: #f86a1a;
 }
 
 .logo-list_item__desc {
@@ -313,9 +304,10 @@ body {
     display: none;
 }
 
-.gallery_img {
+.gallery_img  img{
     margin: 0 auto;
 }
+
 
 .gallery_item:focus {
     outline: 0;
@@ -520,7 +512,7 @@ body {
 }
 
 .button {
-    display: block;
+    display: inline-block;
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
@@ -550,8 +542,8 @@ body {
     0 1px 1px rgba(255, 255, 255, .1);
 }
 
-.price_button {
-    margin: 0 auto;
+.price_button-wrap {
+    text-align: center;
 }
 
 .button img {
@@ -614,70 +606,22 @@ body {
     background-color: rgba(36, 43, 48, 0.63);
     padding: 12px;
     width: 595px;
+    height: 440px;
     margin: 0 auto;
 }
 
 .repair-check_form-wrap {
     background: #ffffff;
-    padding: 30px 50px;
+    padding-top: 70px;
+    width: 100%;
+    height: 100%;
 }
 
-.repair-check_header {
-    margin-bottom: 30px;
+.repair-check_form-wrap iframe {
+    width: 100%;
+    height: 100%;
 }
 
-.repair-check_form label {
-    font-size: 24px;
-    font-weight: 400;
-    color: #000000;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.input__phone-wrap {
-    font-size: 24px;
-    font-weight: 400;
-    color: #b5b5b5;
-    padding: 20px 18px;
-    border: 1px solid #dbdfe2;
-    width: 455px;
-    margin-bottom: 13px;
-}
-
-.input__phone-wrap input {
-    color: #000000;
-    border: none;
-    width: 300px;
-    font-size: 24px;
-    font-weight: 400;
-    outline: none;
-}
-
-.input-example {
-    font-size: 16px;
-    color: #b5b5b5;
-    font-weight: 400;
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-.input-example img {
-    margin-right: 5px;
-    vertical-align: bottom;
-}
-
-.input-example span {
-    font-weight: 700;
-}
-
-.repair-check_button {
-    background-color: #ff6700;
-    color: #ffffff;
-}
-
-.repair-check_button img {
-    margin-left: 30px;
-}
 
 /*********************      contacts + map      **********************/
 
@@ -696,6 +640,7 @@ body {
     -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.08);
     -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.08);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.08);
+    z-index: 1;
 }
 
 .contacts_item {
@@ -746,16 +691,6 @@ body {
     -moz-text-decoration-color: #f9f9f9;
     -webkit-text-decoration-color: #f9f9f9;
     cursor: pointer;
-}
-
-.map {
-    display: block;
-    height: 470px;
-    width: 100%;
-}
-
-.map__mobile {
-    display: none;
 }
 
 /*********************    FOOTER     **********************/
@@ -816,7 +751,7 @@ body {
 
     .nav__mobile {
         display: block;
-        padding: 10px;
+        padding: 5px 10px;
     }
 
     .nav_list__mobile {
@@ -826,13 +761,19 @@ body {
         width: 100%;
         text-align: center;
         left: 0;
-        top: 80px;
+        top: 75px;
+        -webkit-box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav_list__mobile .nav_list {
+        width: 100%;
+        background: #333333;
     }
 
     .nav_list__mobile .nav_item {
         float: none;
-        display: block;
-        background: #333333;
     }
 
     .active {
@@ -844,9 +785,9 @@ body {
         padding-bottom: 0;
     }
 
-    .logo-list_item__logo a {
-        font-size: 30px;
-        color: #f6f6f6;
+    .icon-logo__mobile {
+        width: 151px;
+        height: 62px;
     }
 
     .logo-list_item__desc {
@@ -887,7 +828,7 @@ body {
 
     /*************     about    ***********/
     .cntBlock_about {
-        margin-top: 85px;
+        margin-top: 75px;
     }
 
     .about_item:first-child {
@@ -906,10 +847,6 @@ body {
     .contacts_title, .contacts_title a {
         font-size: 18px;
         line-height: 27px;
-    }
-
-    .contacts_item__phone {
-        margin-right: 0;
     }
 
     /**********      hero     ********/
@@ -1052,12 +989,6 @@ body {
     /*************     nav    ************/
     .nav__mobile {
         width: 100%;
-    }
-
-    .cntBlock_nav {
-        -webkit-box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
-        -moz-box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
-        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
     }
 
     .logo-list_item__desc {
@@ -1228,7 +1159,7 @@ body {
     }
 
     .button {
-        font-size: 18px;
+        font-size: 16px;
         padding: 10px;
         width: 100%;
     }
@@ -1275,40 +1206,10 @@ body {
     }
 
     .repair-check_content {
-        width: 300px;
-    }
-
-    .repair-check_form-wrap {
-        padding: 30px 20px;
-    }
-
-    .repair-check_header {
-        font-size: 30px;
-    }
-
-    .repair-check_form label {
-        font-size: 20px;
-    }
-
-    .input__phone-wrap {
-        width: 100%;
-        font-size: 18px;
-        padding: 10px;
-    }
-
-    .input__phone-wrap input {
-        width: 150px;
-    }
-
-    .input-example {
-        font-size: 14px;
-        padding-left: 10px;
+        width: 348px;
     }
 
     /*******   contacts + map   *******/
-    .map {
-        display: none;
-    }
 
     .contacts_wrapper__mobile {
         width: 100%;
@@ -1329,10 +1230,6 @@ body {
         box-shadow: none;
     }
 
-    .map__mobile {
-        display: block;
-    }
-
     .voyage {
         bottom: -80px;
         right: 60px;
@@ -1351,4 +1248,41 @@ body {
     .social {
         float: left;
     }
+}
+
+
+
+
+/**************   SPECIAL for iFRAME *********/
+
+@media (max-width: 385px) {
+    .cntBlock_repair-check {
+        background-color: #ffffff;
+    }
+
+    .repair-check {
+        padding: 0;
+    }
+
+    .repair-check_bg-container {
+        background: none;
+        padding: 0;
+    }
+
+    .repair-check_content {
+        width: 100%;
+        background: none;
+        border: none;
+        padding: 0;
+        height: 100%;
+    }
+
+    .repair-check_form-wrap iframe {
+        width: 320px;
+        height: 340px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
 }

@@ -19,7 +19,7 @@ $(document).ready(function () {
         var target = this.hash;
         $target = $(target);
         $('html, body').stop().animate({
-            'scrollTop':  $target.offset().top - $('.nav').height()
+            'scrollTop':  $target.offset().top - $('.cntBlock_nav').height()
         }, 900, 'swing', function () {
             window.location.hash = target;
         });
@@ -66,5 +66,34 @@ $(document).ready(function () {
         ]
     });
 
+    $(".gallery_img__desktop").fancybox({
+        openEffect: 'fade',
+        closeEffect: 'fade'
+    });
+
+    $(".gallery_img__tablet").fancybox({
+        openEffect: 'fade',
+        closeEffect: 'fade'
+    });
+
+    $(".button__google-table").fancybox({
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        type: 'iframe'
+
+    })
+
 });
 
+/*****      map    *******/
+
+function myMap() {
+    var map = new ymaps.Map('map', {
+        center: [53.9277167, 27.599676],
+        zoom: 17
+    });
+    var marker = new ymaps.Placemark([53.9277167, 27.599676], {}, {
+        iconImageHref: 'img/geo2.svg'
+    });
+    map.geoObjects.add(marker);
+}
